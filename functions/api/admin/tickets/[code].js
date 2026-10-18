@@ -16,6 +16,12 @@ export async function onRequestPatch({ request, env, params }) {
     await env.TICKETS_DB.prepare("UPDATE tickets SET status = 'emailed', emailed_at = CURRENT_TIMESTAMP WHERE code = ?").bind(params.code).run();
     return json({ ok: true });
   }
+  if (body.action === "set_phone") {
+    // the organiser types in a phone number by hand (for example for the feedback messages)
+    const phone = String(body.phone || "").replace(/[^\d+() -]/g, "").trim().slice(0, 30);
+    await env.TICKETS_DB.prepare("UPDATE tickets SET phone = ? WHERE code = ?").bind(phone, params.code).run();
+    return json({ ok: true, phone });
+  }
   if (body.action === "set_pay") {
     // Switch how someone is paying. Cash stays unpaid until you press "Mark paid".
     if (body.method === "cash") {
