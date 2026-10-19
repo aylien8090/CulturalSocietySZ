@@ -3,22 +3,21 @@
 <head>
 <script>if (location.hostname.endsWith('github.io')) location.replace('https://asiansociety.pages.dev' + location.pathname.replace(/^\/AsianSociety/, '') + location.search + location.hash);</script>
 <meta charset="UTF-8">
-<script>(function(){var TICKETS_CLOSED=true;var n=Date.now(),p=TICKETS_CLOSED?'closed':n<=new Date('2026-10-11T23:59:59+03:00').getTime()?'early':n<=new Date('2026-10-15T14:00:00+03:00').getTime()?'ten':'fifteen';document.documentElement.className+=' '+p+(p==='early'?'':' late');})();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#141234">
-<title>Cultural Event · 17 October, 6PM · Asian Society, Trakia University</title>
-<meta name="description" content="Cultural Event, Saturday 17 October, 6PM to 10PM at the International Youth Center, Stara Zagora. Dress up in your cultural clothes! Ticket sales are closed. See you there!">
-<meta property="og:title" content="Cultural Event · Saturday 17 October, 6PM">
-<meta property="og:description" content="International Youth Center, Stara Zagora. Dress up in your cultural clothes! Starts at 6PM sharp. Ticket sales are closed.">
+<title>Cultural Event 2026 · What a night! · Asian Society, Trakia University</title>
+<meta name="description" content="Photos and highlights from the Asian Society × Trakia University Cultural Event: Saturday 17 October 2026, International Youth Center, Stara Zagora. Dressed in culture, bingo, trivia, food, henna and more.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://asiansociety.pages.dev/">
-<meta property="og:image" content="https://asiansociety.pages.dev/Images/linkpreview-v3.jpg">
+<meta property="og:title" content="Cultural Event · What a night! 🏮">
+<meta property="og:description" content="See the photos from our Cultural Event: Saturday 17 October, International Youth Center, Stara Zagora.">
+<meta property="og:image" content="https://asiansociety.pages.dev/Images/linkpreview-recap2.jpg">
 <meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:width" content="800">
-<meta property="og:image:height" content="800">
-<meta property="og:image:alt" content="Asian Society Cultural Event, Saturday 17 October, Stara Zagora.">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Everyone dressed in their cultural clothes at the Cultural Event, 17 October.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://asiansociety.pages.dev/Images/linkpreview-v3.jpg">
+<meta name="twitter:image" content="https://asiansociety.pages.dev/Images/linkpreview-recap2.jpg">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8F%AE%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,951 +25,332 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --night:#141234; --plum:#241a38;
-  --cream:#f4e9d4; --cream-dim:rgba(240,230,212,.72);
-  --gold:#d8a24a; --gold-hi:#ffcf7e; --gold-soft:#e9c887;
-  --red:#c23318; --red-hi:#e0502c;
-  --paper:#f7ecd7; --ink:#2b2115;
+  --night:#141234;--plum:#241a38;--cream:#f4e9d4;--cream-dim:rgba(240,230,212,.74);
+  --gold:#d8a24a;--gold-hi:#ffcf7e;--gold-soft:#e9c887;--red:#c23318;--red-hi:#e0502c;
 }
 [hidden]{display:none!important}
-.late [data-early-only],.early [data-late-only],.early [data-ten-only],.early [data-fifteen-only],.ten [data-fifteen-only],.fifteen [data-ten-only]{display:none!important}
-.closed [data-early-only],.closed [data-late-only],.closed [data-ten-only],.closed [data-fifteen-only],.closed [data-open-only],.closed #prices,.closed #join{display:none!important}
-html:not(.closed) [data-closed-only]{display:none!important}
 html{scroll-behavior:smooth}
-body{background:#0a0920;font-family:'Karla',sans-serif;color:var(--cream);
-  -webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent;
-  display:flex;justify-content:center;overflow-x:hidden}
+body{background:#0a0920;font-family:'Karla',sans-serif;color:var(--cream);-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent;overflow-x:hidden}
+a{color:inherit}
 button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
 :focus-visible{outline:2px dashed var(--gold);outline-offset:3px}
 ::selection{background:var(--red);color:var(--cream)}
 
-.stage{width:100%;max-width:540px;position:relative;background:var(--night);
-  box-shadow:0 0 0 1px rgba(216,162,74,.16),0 0 90px rgba(0,0,0,.6)}
+.page{background:linear-gradient(180deg,#141234 0%,#1d1a45 30%,#241a38 60%,#2a1c3f 100%);min-height:100vh}
 
-/* ═══════════ HERO — the night scene ═══════════ */
-.hero{position:relative;overflow:hidden;display:flex;
-  min-height:100vh;min-height:100svh;
-  background:linear-gradient(180deg,#141234 0%,#1d1a45 55%,#43306b 100%)}
-.glow{position:absolute;left:0;right:0;bottom:0;height:42%;z-index:1;
-  background:radial-gradient(60% 100% at 50% 100%,rgba(255,150,70,.18),transparent 70%)}
-.stars{position:absolute;inset:0;z-index:1}
-.star{position:absolute;border-radius:50%;background:#ffe9c0;opacity:.75}
+/* ═══════════ TOP TABS (stay at the top while scrolling) ═══════════ */
+.tabs{position:sticky;top:0;z-index:60;background:rgba(20,18,52,.9);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid rgba(216,162,74,.28)}
+.tabs__in{max-width:1100px;margin:0 auto;padding:9px 14px;display:flex;align-items:center;justify-content:center;gap:8px}
+.tabs__brand{display:none;margin-right:auto;font:800 11px 'Karla';letter-spacing:.22em;color:var(--gold-soft)}
+@media(min-width:760px){.tabs__brand{display:block}.tabs__in{justify-content:flex-end}}
+.tab{padding:10px 20px;border-radius:999px;border:1px solid rgba(216,162,74,.4);color:var(--cream);text-decoration:none;font:800 13px 'Karla';letter-spacing:.14em;text-transform:uppercase;
+  transition:border-color .25s,transform .2s}
+.tab:hover{background:rgba(216,162,74,.16);border-color:var(--gold-hi)}
+.tab:active{transform:scale(.96)}
+.tab.on{background:linear-gradient(180deg,#ffd98c,#e0a24c);border-color:transparent;color:#2a1d0a}
+section{scroll-margin-top:64px}
+.wrap{width:100%;max-width:1100px;margin:0 auto;padding:0 20px}
+
+/* ═══════════ HERO ═══════════ */
+.hero{position:relative;overflow:hidden;text-align:center;padding:70px 0 34px;
+  background:radial-gradient(900px 420px at 50% 0%,rgba(255,170,90,.16),transparent 70%),linear-gradient(180deg,#141234,#1d1a45 70%,transparent)}
+.stars{position:absolute;inset:0;pointer-events:none}
+.star{position:absolute;border-radius:50%;background:#ffe9c0;opacity:.7}
 .star.tw{animation:tw 2.8s ease-in-out infinite alternate}
 @keyframes tw{from{opacity:.12}to{opacity:.95}}
-.moon{position:absolute;right:19%;top:88px;width:42px;z-index:2;
-  filter:drop-shadow(0 0 10px rgba(242,223,174,.4));animation:fadein .9s ease .85s both}
-.skyline{position:absolute;left:0;right:0;bottom:0;width:100%;height:clamp(120px,22vh,190px);
-  z-index:3;animation:fadein 1s ease .4s both}
-.skyline .w{animation:tw 3.4s ease-in-out infinite alternate}
-
-.valance{position:absolute;top:0;left:0;width:100%;height:44px;z-index:6;
-  animation:vdrop .55s cubic-bezier(.2,.9,.3,1) both}
-@keyframes vdrop{from{transform:translateY(-105%)}to{transform:none}}
-
-.hang{position:absolute;top:0;z-index:7;animation:ldrop .7s ease-out var(--ld,.15s) both}
-@keyframes ldrop{from{opacity:0;transform:translateY(-26px)}to{opacity:1;transform:none}}
-.lantern{display:block;width:100%;height:auto;transform-origin:50% 0;
-  animation:sway var(--sw,6s) ease-in-out var(--swd,-2s) infinite}
+.valance{position:absolute;top:0;left:0;width:100%;height:44px;z-index:3}
+.hang{position:absolute;top:0;z-index:4}
+.lantern{display:block;width:100%;height:auto;transform-origin:50% 0;animation:sway var(--sw,6s) ease-in-out var(--swd,-2s) infinite}
 @keyframes sway{0%,100%{transform:rotate(0)}50%{transform:rotate(2.6deg)}}
-.hang--a{left:4%;width:56px}
-.hang--b{right:6%;width:44px}
-.hang--c{left:40%;width:30px;opacity:.92}
-
-.hero__content{position:relative;z-index:8;margin:auto;max-width:480px;
-  display:flex;flex-direction:column;align-items:center;text-align:center;
-  padding:clamp(120px,17vh,170px) 24px clamp(150px,26vh,230px)}
-
-.kicker{font:800 10.5px 'Karla';letter-spacing:.24em;color:var(--gold-soft);margin-bottom:14px}
-.title{font-family:'Fraunces',serif;font-optical-sizing:auto;line-height:1.04}
-.t1{display:block;font-weight:600;font-size:clamp(20px,6vw,34px);letter-spacing:.12em;color:var(--cream)}
-.t2{display:block;font-weight:900;font-size:clamp(40px,11.5vw,64px);letter-spacing:.01em;margin-top:6px;
-  background:linear-gradient(180deg,#ffdf9a,#f2b04e 55%,#dd8f36);
-  -webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;
-  filter:drop-shadow(0 0 20px rgba(240,170,80,.28))}
-.sub{margin-top:18px;font-family:'Fraunces',serif;font-style:italic;font-weight:500;
-  font-size:clamp(16px,4.6vw,21px);color:#f2dcae}
-.chip{margin-top:20px;border:1px solid rgba(216,162,74,.5);color:var(--gold-soft);
-  border-radius:999px;padding:8px 16px;font:700 10px 'Karla';letter-spacing:.2em}
-
-.cta{text-decoration:none;position:relative;display:inline-flex;align-items:center;gap:9px;margin-top:26px;
-  padding:17px 34px;border-radius:999px;
-  background:linear-gradient(180deg,var(--red-hi),var(--red));color:#fff7ea;
-  font:800 13.5px 'Karla';letter-spacing:.14em;text-transform:uppercase;
-  box-shadow:0 12px 28px rgba(200,55,25,.4),inset 0 1px 0 rgba(255,255,255,.25);
-  transition:transform .35s cubic-bezier(.2,1.8,.4,1),box-shadow .35s}
-.cta svg{width:13px;height:11px}
-.cta::after{content:"";position:absolute;inset:-5px;border-radius:inherit;pointer-events:none;
-  box-shadow:0 0 22px 4px rgba(255,150,70,.32);animation:breathe 3.4s ease-in-out infinite}
-@keyframes breathe{0%,100%{opacity:.45;transform:scale(1)}50%{opacity:.95;transform:scale(1.04)}}
-.cta:hover,.cta:focus-visible{transform:scale(1.06);
-  box-shadow:0 16px 36px rgba(200,55,25,.5),inset 0 1px 0 rgba(255,255,255,.25)}
-.cta:active{transform:scale(.96)}
-.fine{margin-top:16px;font-size:12.5px;line-height:1.55;color:var(--cream-dim);max-width:34ch}
-.fine b{color:var(--gold-soft);font-weight:800}
-.venue{display:flex;align-items:center;gap:12px;margin-top:20px;padding:13px 16px;max-width:360px;text-align:left;
-  border:1.5px solid rgba(216,162,74,.65);border-radius:16px;background:rgba(20,18,52,.55);
-  backdrop-filter:blur(4px);color:var(--cream);text-decoration:none;
-  transition:transform .3s cubic-bezier(.2,1.6,.4,1),border-color .3s}
-.venue:hover,.venue:focus-visible{transform:scale(1.03);border-color:var(--gold-hi)}
-.venue__pin{flex:none;width:30px;height:30px;color:var(--gold-hi)}
-.venue__txt{display:flex;flex-direction:column;gap:2px;font-size:13px;line-height:1.35;color:var(--cream-dim)}
-.venue__txt b{font:800 16px 'Karla';color:var(--cream)}
-.venue__txt em{font-style:normal;font-weight:800;font-size:11px;letter-spacing:.1em;color:var(--gold-soft);margin-top:3px;text-transform:uppercase}
-.when{margin-top:10px;font:800 clamp(15px,4.4vw,19px) 'Karla';letter-spacing:.2em;color:var(--gold-hi)}
-.herolinks{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
-.hlink{display:inline-block;padding:11px 18px;border-radius:999px;border:1.5px solid rgba(233,200,135,.55);
-  background:rgba(20,18,52,.45);color:var(--gold-soft);font:800 15px 'Karla';text-decoration:none;
-  transition:transform .25s cubic-bezier(.2,1.6,.4,1),background .25s,border-color .25s}
-.hlink:hover,.hlink:focus-visible{transform:scale(1.04);background:rgba(216,162,74,.18);border-color:var(--gold-hi);color:var(--gold-hi)}
-.fine s{opacity:.7}
-.dl{display:flex;flex-direction:column;align-items:center;gap:2px;margin-top:22px;padding:12px 26px 11px;
-  border-radius:18px;background:linear-gradient(180deg,#d63a1c,#a82a12);color:#fff7ea;
-  border:2px solid var(--gold-hi);box-shadow:0 10px 28px rgba(200,55,25,.45),0 0 0 4px rgba(255,207,126,.12)}
-.dl__top{font:900 clamp(16px,4.6vw,20px)/1.3 'Karla';letter-spacing:.1em;text-align:center}
-.dl__date{font:900 clamp(24px,7.2vw,34px)/1.05 'Fraunces',serif;letter-spacing:.02em;color:#fff;text-align:center}
-.dl__left{font:800 12.5px 'Karla';letter-spacing:.08em;color:#ffe2a8}
-.dl + .cta{margin-top:18px}
-.cd:empty{display:none}
-.dlbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:4px 12px;margin-top:18px;padding:12px 14px;
-  border-radius:14px;background:linear-gradient(180deg,#d63a1c,#a82a12);color:#fff7ea;border:1.5px solid var(--gold-hi);
-  font-size:15px;text-align:center}
-.dlbar b{font:900 17px 'Karla'}
-.dlbar .cd{font:800 12.5px 'Karla';letter-spacing:.06em;color:#ffe2a8}
-.dlbar--card{margin-top:16px}
-
-/* urgency: top bar, event countdown, extra CTAs, sticky button */
-.topbar{position:sticky;top:0;z-index:150;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:2px 10px;
-  padding:9px 12px;background:linear-gradient(180deg,#d63a1c,#a82a12);color:#fff7ea;text-align:center;text-decoration:none;
-  font:700 13px/1.3 'Karla';box-shadow:0 4px 14px rgba(0,0,0,.35);border-bottom:1.5px solid var(--gold-hi)}
-.topbar b{font-weight:800}
-.topbar .cd{font-weight:800;color:#ffe2a8;background:rgba(0,0,0,.25);border-radius:99px;padding:2px 9px}
-.topbar u{font-weight:800;color:var(--gold-hi);text-underline-offset:3px}
-.topbar--sale{background:linear-gradient(180deg,#2c6b46,#1f4f33)}
-.evcount{margin-top:14px;font:800 15px 'Karla';letter-spacing:.06em;color:var(--gold-hi)}
-.votebtn{display:flex;flex-direction:column;align-items:center;gap:2px;margin-top:12px;padding:12px 22px;max-width:360px;width:100%;border-radius:16px;
-  background:linear-gradient(180deg,#f2b04e,#d98d2b);color:#2a1d0a;text-decoration:none;text-align:center;
-  box-shadow:0 8px 22px rgba(217,141,43,.4),inset 0 1px 0 rgba(255,255,255,.35);transition:transform .3s cubic-bezier(.2,1.6,.4,1)}
-.votebtn:hover,.votebtn:focus-visible{transform:scale(1.03)}
-.votebtn__t{font:900 16px 'Karla';letter-spacing:.08em}
-.votebtn__s{font:700 12.5px 'Karla';opacity:.8}
-.sharp{margin-top:16px;padding:12px 16px;max-width:360px;border-radius:14px;background:rgba(255,207,126,.12);border:1.5px solid rgba(255,207,126,.55);font-size:15px;line-height:1.5;color:var(--cream)}
-.sharp b{color:var(--gold-hi)}
-.agenda{padding:44px 22px 12px;text-align:center}
-.agenda__h{font:800 22px 'Karla';letter-spacing:.24em;color:var(--gold-soft)}
-.agenda__h::after{content:"";display:block;width:34px;height:1px;background:rgba(216,162,74,.5);margin:12px auto 0}
-.agenda__lead{margin:16px auto 0;max-width:34ch;font-size:16px;color:var(--cream)}
-.agenda__lead b{color:var(--gold-hi)}
-.agenda__list{list-style:none;margin-top:18px;text-align:left;display:grid;gap:8px}
-.agenda__list li{display:flex;gap:14px;align-items:flex-start;padding:12px 14px;border-radius:14px;background:rgba(255,255,255,.05);border:1px solid rgba(216,162,74,.22)}
-.agenda__list li.hl{background:rgba(216,162,74,.16);border:1.5px solid var(--gold-hi)}
-.agenda__list .t{flex:none;min-width:74px;font:900 16px 'Karla';color:var(--gold-hi)}
-.agenda__list .t.dot{min-width:74px;text-align:center;color:var(--gold-soft);opacity:.7}
-.agenda__list .w{font:700 16px/1.4 'Karla';color:var(--cream)}
-.agenda__list .w em{font-style:normal;font-weight:900;font-size:12px;letter-spacing:.1em;color:#fff;background:var(--red);border-radius:99px;padding:2px 9px;margin-left:6px;vertical-align:2px}
-.agenda__list .w small{display:block;font-weight:400;font-size:13.5px;color:var(--cream-dim);margin-top:2px}
-.votebox{margin-top:24px;padding:20px 16px;border-radius:18px;background:linear-gradient(180deg,rgba(194,51,24,.25),rgba(194,51,24,.1));border:1.5px solid rgba(255,207,126,.5)}
-.votebox__t{font:900 22px 'Fraunces',serif;color:var(--gold-hi)}
-.votebox__s{margin-top:6px;font-size:14.5px;color:var(--cream-dim)}
-.votebox .cta{margin-top:16px}
-.ctarow{text-align:center;padding:6px 0 4px}
-.ctarow .cta{margin-top:22px}
-.ctarow__sub{margin-top:12px;font:800 13.5px 'Karla';color:var(--gold-soft)}
-.finalcta{padding:34px 22px 10px;text-align:center;border-top:1px solid rgba(216,162,74,.18)}
-.finalcta__t{font:900 28px 'Fraunces',serif;color:var(--gold-hi)}
-.finalcta__s{margin-top:8px;font-size:15px;color:var(--cream-dim)}
-.finalcta__s b{color:var(--gold-hi)}
-.finalcta .cta{margin-top:20px}
-@media(min-width:600px){.stickycta{left:calc(50% - 270px + 14px)!important}}
-.stickycta{position:fixed;left:14px;width:calc(100% - 98px);bottom:calc(14px + env(safe-area-inset-bottom));z-index:39;max-width:400px;
-  display:flex;align-items:center;justify-content:center;gap:8px;height:52px;padding:0 16px;border-radius:99px;
-  background:linear-gradient(180deg,var(--red-hi),var(--red));color:#fff7ea;text-decoration:none;
-  font:800 15px 'Karla';letter-spacing:.04em;box-shadow:0 8px 22px rgba(200,55,25,.5),inset 0 1px 0 rgba(255,255,255,.25);
-  animation:stickyPulse 2.6s ease-in-out infinite}
-.stickycta__p{font-weight:700;font-size:12.5px;color:#ffe2a8}
-@keyframes stickyPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.03)}}
-@media(prefers-reduced-motion:reduce){.stickycta{animation:none}}
-.cue{margin-top:22px;color:rgba(233,200,135,.75)}
-.cue__i{width:20px;height:12px;animation:cueb 2.2s ease-in-out infinite}
-@keyframes cueb{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
-
-.up{animation:up .65s ease-out var(--d,0s) both}
-.pop{animation:pop .7s cubic-bezier(.2,1.35,.3,1) var(--d,0s) both}
-.fade{animation:fadein .7s ease var(--d,0s) both}
+.hang--a{left:3%;width:clamp(44px,8vw,70px)}
+.hang--b{right:4%;width:clamp(38px,6.5vw,56px)}
+.hang--c{left:30%;width:clamp(24px,3.4vw,34px);opacity:.9}
+.hang--d{right:26%;width:clamp(24px,3.4vw,34px);opacity:.9}
+.hero__in{position:relative;z-index:5}
+.kicker{font:800 11px 'Karla';letter-spacing:.26em;color:var(--gold-soft)}
+.title{margin-top:14px;font-family:'Fraunces',serif;line-height:1.02}
+.t1{display:block;font-weight:600;font-size:clamp(20px,4.6vw,34px);letter-spacing:.14em;color:var(--cream)}
+.t2{display:block;font-weight:900;font-size:clamp(46px,12vw,104px);margin-top:6px;letter-spacing:.01em;
+  background:linear-gradient(180deg,#ffdf9a,#f2b04e 55%,#dd8f36);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;
+  filter:drop-shadow(0 0 22px rgba(240,170,80,.3))}
+.sub{margin-top:16px;font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:clamp(18px,4.2vw,26px);color:#f2dcae}
+.chips{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.chip{border:1px solid rgba(216,162,74,.55);color:var(--gold-soft);border-radius:999px;padding:9px 16px;font:800 12px 'Karla';letter-spacing:.14em;text-transform:uppercase;text-decoration:none}
+a.chip:hover{background:rgba(216,162,74,.15);color:var(--gold-hi)}
+.hero__photo{margin:34px auto 0;max-width:880px;position:relative}
+.hero__photo::before{content:"";position:absolute;inset:-10px;border-radius:26px;border:1px solid rgba(216,162,74,.45)}
+.hero__photo img{display:block;width:100%;height:auto;border-radius:20px;box-shadow:0 24px 60px rgba(0,0,0,.55)}
+.hero__cap{margin-top:14px;font-size:14px;color:var(--cream-dim)}
+.up{animation:up .7s ease-out var(--d,0s) both}
 @keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
-@keyframes pop{from{opacity:0;transform:scale(.8) translateY(10px)}to{opacity:1;transform:none}}
-@keyframes fadein{from{opacity:0}to{opacity:1}}
 
-/* ═══════════ BELOW THE FOLD — carpet + form ═══════════ */
-.below{position:relative;background:var(--plum)}
-.below::before{content:"";position:absolute;top:0;left:0;right:0;height:90px;pointer-events:none;
-  background:linear-gradient(180deg,rgba(255,170,90,.1),transparent)}
-.onnight{padding:54px 22px 10px;text-align:center}
-.onnight__h{font:800 24px 'Karla';letter-spacing:.24em;color:var(--gold-soft)}
-.tickets{padding:46px 22px 4px;text-align:center}
-.tickets__h{font:800 20px 'Karla';letter-spacing:.22em;color:var(--gold-soft)}
-.tickets__h::after{content:"";display:block;width:34px;height:1px;background:rgba(216,162,74,.5);margin:12px auto 0}
-.tiers{display:grid;gap:10px;margin-top:20px;text-align:left}
-.tier{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;border-radius:14px;border:1px solid rgba(216,162,74,.3);background:rgba(255,255,255,.04)}
-.tier__n{font:800 15px 'Karla';color:var(--cream)}
-.tier__d{font-size:12.5px;color:var(--cream-dim);margin-top:2px}
-.tier__p{font:900 28px 'Fraunces',serif;color:var(--cream)}
-.tier.old .tier__p{text-decoration:line-through;opacity:.55}
-.tier__r{text-align:right;flex:none}
-.tier__disc{display:flex;align-items:center;justify-content:flex-end;gap:7px;font:700 14px 'Karla'}
-.tier__disc s{opacity:.6}
-.tier__off{font:900 11px 'Karla';letter-spacing:.08em;color:#fff7ea;background:var(--red);border-radius:99px;padding:3px 8px}
-.tier__r .tier__p{line-height:1}
-.tier.now{border:2px solid var(--gold-hi);background:rgba(216,162,74,.12);box-shadow:0 0 28px rgba(255,170,80,.18)}
-.tier.now .tier__p{color:var(--gold-hi)}
-.tier__tag{display:inline-block;margin-left:8px;font:800 9.5px 'Karla';letter-spacing:.12em;color:#2b2115;background:var(--gold-hi);border-radius:99px;padding:3px 8px;vertical-align:2px}
-a.tier{cursor:pointer;text-decoration:none;color:inherit;transition:transform .25s cubic-bezier(.2,1.6,.4,1),border-color .25s}
-a.tier:hover,a.tier:focus-visible{transform:scale(1.02);border-color:var(--gold-hi)}
-.tier.first{opacity:.9;cursor:pointer}
-.tier__go{display:inline-block;margin-top:4px;font:800 11px 'Karla';letter-spacing:.1em;color:var(--gold-hi);text-transform:uppercase}
-.tickets__note{margin-top:14px;font-size:13.5px;line-height:1.55;color:var(--cream-dim)}
-.tickets__note b{color:var(--gold-soft)}
-.onnight__h::after{content:"";display:block;width:34px;height:1px;
-  background:rgba(216,162,74,.5);margin:12px auto 0}
+/* ═══════════ SECTIONS ═══════════ */
+section{padding:56px 0 8px}
+.h{font:800 clamp(18px,3.4vw,24px) 'Karla';letter-spacing:.24em;color:var(--gold-soft);text-align:center}
+.h::after{content:"";display:block;width:34px;height:1px;background:rgba(216,162,74,.5);margin:12px auto 0}
+.lead{max-width:62ch;margin:20px auto 0;text-align:center;font-size:clamp(16px,2.4vw,19px);line-height:1.7;color:var(--cream)}
+.lead b{color:var(--gold-hi)}
 
-.rug{margin-top:20px;border-radius:16px;padding:8px 18px;background-color:#5e1c2b;
-  background-image:repeating-linear-gradient(45deg,rgba(0,0,0,.05) 0 2px,transparent 2px 5px),
-                   repeating-linear-gradient(-45deg,rgba(255,255,255,.02) 0 2px,transparent 2px 5px);
-  border:1.5px solid #caa24d;
-  box-shadow:inset 0 0 0 4px #5e1c2b,inset 0 0 0 5px rgba(202,164,77,.45),inset 0 0 0 12px rgba(0,0,0,.14)}
-.perks{list-style:none}
-.perks li + li{border-top:1px solid rgba(255,255,255,.08)}
-.perk{display:flex;align-items:center;gap:15px;width:100%;padding:13px 2px;text-align:left}
-.perk__float{flex:none;animation:floaty 3.8s ease-in-out infinite;animation-delay:var(--fd,0s)}
-@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
-.perk__orb{display:grid;place-items:center;width:54px;height:54px;border-radius:50%;
-  color:var(--gold-hi);border:1px solid rgba(216,162,74,.4);
-  background:radial-gradient(circle at 50% 40%,rgba(255,196,110,.24),rgba(255,196,110,.05) 62%,transparent 75%);
-  transition:transform .45s cubic-bezier(.3,1.7,.4,1),border-color .3s}
-.perk__orb svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.8;
-  stroke-linecap:round;stroke-linejoin:round}
-.perk:hover .perk__orb,.perk:focus-visible .perk__orb,.perk.tapped .perk__orb{
-  transform:translateY(-8px) scale(1.08);border-color:rgba(255,207,126,.75)}
-.perk__txt{font:700 16px/1.35 'Karla';color:var(--cream);transition:color .3s}
-.perk:hover .perk__txt{color:#ffe6b8}
-.peek{display:inline-block;animation:peek 3.4s ease-in-out infinite}
-@keyframes peek{0%,100%{transform:rotate(0) translateY(0)}
-  25%{transform:rotate(-8deg) translateY(-1px)}60%{transform:rotate(7deg)}}
+/* facts */
+.facts{margin-top:30px;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.fact{padding:20px 18px;border-radius:18px;background:rgba(255,255,255,.05);border:1px solid rgba(216,162,74,.3);text-align:center}
+.fact__i{font-size:28px}
+.fact__k{margin-top:6px;font:800 11px 'Karla';letter-spacing:.2em;color:var(--gold-soft);text-transform:uppercase}
+.fact__v{margin-top:6px;font:700 17px/1.4 'Karla';color:var(--cream)}
+.fact__v small{display:block;font-weight:400;font-size:14px;color:var(--cream-dim);margin-top:3px}
+.fact a{color:var(--gold-hi);font-weight:800;text-underline-offset:3px}
 
-.join{padding:38px 22px 26px}
-.card{position:relative;max-width:440px;margin:0 auto;background:var(--paper);color:var(--ink);
-  border-radius:18px;padding:24px 22px 20px;text-align:left;
-  box-shadow:0 18px 50px rgba(0,0,0,.45),inset 0 0 0 1px rgba(216,162,74,.35)}
-.card__head{display:flex;align-items:center;gap:14px;
-  padding-bottom:14px;border-bottom:1px solid rgba(139,116,74,.25)}
-.mlan{width:34px;height:auto;flex:none;display:block}
-.card__t{font-family:'Fraunces',serif;font-weight:700;font-size:23px;line-height:1.05;color:var(--ink)}
-.card__s{margin-top:5px;font:800 9.5px 'Karla';letter-spacing:.18em;color:#8a744e}
+/* highlights */
+.hl{margin-top:30px;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.hl__c{padding:18px 16px;border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.03));border:1px solid rgba(216,162,74,.22)}
+.hl__e{font-size:30px}
+.hl__t{margin-top:8px;font:800 17px 'Karla';color:var(--gold-hi)}
+.hl__d{margin-top:4px;font-size:14.5px;line-height:1.5;color:var(--cream-dim)}
 
-.f{margin-top:18px}
-.f label{display:block;font:800 10.5px/1 'Karla';letter-spacing:.16em;
-  text-transform:uppercase;color:#7a6540;margin-bottom:2px}
-.req{color:var(--red);margin-left:4px}
-.opt{display:inline-block;margin-left:7px;font:700 8.5px/1 'Karla';letter-spacing:.12em;
-  color:#a08a5e;border:1px solid #cfbd93;border-radius:99px;padding:3px 7px;
-  text-transform:uppercase;vertical-align:1px}
-.ctl{position:relative}
-.ctl::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--red);
-  transform:scaleX(0);transform-origin:left;transition:transform .3s ease}
-.f:focus-within .ctl::after{transform:scaleX(1)}
-.ctl input,.ctl select{width:100%;background:transparent;border:0;
-  border-bottom:1.5px solid #cdbb92;border-radius:0;padding:11px 1px 9px;
-  font:500 17px/1.3 'Karla';color:var(--ink);appearance:none;-webkit-appearance:none}
-.ctl input::placeholder{color:#b5a37c}
-.ctl select{cursor:pointer;padding-right:26px}
-.chev{position:absolute;right:2px;bottom:14px;width:11px;height:7px;color:#8a744e;pointer-events:none}
-.err{display:none;margin-top:6px;font:700 12px 'Karla';color:var(--red)}
-.f.bad .err{display:block}
-.f.bad .ctl input{border-bottom-color:var(--red)}
+/* timeline */
+.tl{list-style:none;max-width:640px;margin:30px auto 0;position:relative;padding-left:34px}
+.tl::before{content:"";position:absolute;left:11px;top:8px;bottom:8px;width:2px;background:linear-gradient(180deg,var(--gold),rgba(216,162,74,.15))}
+.tl li{position:relative;padding:0 0 22px;font-size:17px;line-height:1.45}
+.tl li::before{content:"";position:absolute;left:-30px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--night);border:3px solid var(--gold-hi)}
+.tl b{display:block;color:var(--gold-hi);font:800 18px 'Karla'}
+.tl span{color:var(--cream-dim);font-size:15px}
 
-.send{position:relative;display:flex;justify-content:center;align-items:center;width:100%;
-  margin-top:26px;padding:17px 18px;border-radius:12px;
-  background:linear-gradient(180deg,var(--red-hi),var(--red));color:#fff7ea;
-  font:800 13px 'Karla';letter-spacing:.12em;text-transform:uppercase;
-  box-shadow:0 8px 20px rgba(194,51,24,.35),inset 0 1px 0 rgba(255,255,255,.22);
-  transition:transform .3s cubic-bezier(.2,1.6,.4,1)}
-.send:hover{transform:scale(1.02)}
-.send:active{transform:scale(.97)}
-.send.busy{pointer-events:none;color:transparent}
-.send.busy::after{content:"";position:absolute;width:18px;height:18px;
-  border:2px solid rgba(255,247,234,.35);border-top-color:#fff7ea;border-radius:50%;
-  animation:rot .7s linear infinite}
-@keyframes rot{to{transform:rotate(360deg)}}
-.card__fine{margin-top:14px;text-align:center;font-size:11.5px;color:#8a744e}
+/* gallery */
+.gal{margin-top:30px;columns:2;column-gap:10px}
+@media(min-width:720px){.gal{columns:3;column-gap:14px}}
+@media(min-width:1020px){.gal{columns:4}}
+.gal__b{display:block;width:100%;margin:0 0 10px;break-inside:avoid;border-radius:14px;overflow:hidden;position:relative;background:#241a38;
+  box-shadow:0 8px 22px rgba(0,0,0,.35);transition:transform .35s cubic-bezier(.2,1.4,.4,1)}
+@media(min-width:720px){.gal__b{margin-bottom:14px}}
+.gal__b img{display:block;width:100%;height:auto;transition:transform .5s ease,filter .3s}
+.gal__b:hover,.gal__b:focus-visible{transform:translateY(-3px)}
+.gal__b:hover img{transform:scale(1.04)}
+.gal__b::after{content:"⤢";position:absolute;right:8px;bottom:8px;width:30px;height:30px;border-radius:50%;background:rgba(20,18,52,.7);color:var(--gold-hi);display:grid;place-items:center;font-size:15px;opacity:0;transition:opacity .25s}
+.gal__b:hover::after,.gal__b:focus-visible::after{opacity:1}
 
-.done{text-align:center;padding:14px 0 4px}
-.done .mlan{width:46px;margin:0 auto 12px}
-.done__t{font-family:'Fraunces',serif;font-weight:700;font-size:27px;color:var(--ink)}
-.done__c{margin-top:10px;font-size:15px;line-height:1.6;color:#574833}
-.done__c b{color:var(--ink);word-break:break-word}
-.done__c.small{font-size:13px}
-.done__help{margin-top:14px;font-size:14px;color:#574833}
-.steps{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:12px;text-align:left}
-.step{display:flex;gap:11px;align-items:flex-start;padding:14px 12px;border:1px solid #d8a24a;border-radius:14px;background:#fff6e5}
-.step__n{flex:none;width:34px;height:34px;border-radius:50%;background:var(--red);color:#fff7ea;display:grid;place-items:center;font:900 18px 'Karla'}
-.step__b{min-width:0;flex:1}
-.step__h{font:800 16px/1.3 'Karla';color:var(--ink)}
-.step__big{font:900 46px/1.1 'Fraunces',serif;color:var(--red);margin:6px 0 2px}
-.step__sub{font-size:15px;color:#574833;margin-top:4px}
-.step__sub.warn{font-size:13px;color:#7a6540}
-.tag{display:inline-block;white-space:nowrap;font:900 clamp(18px,5.4vw,24px)/1.2 'Karla';color:var(--ink);background:#fff;border:2px dashed #d8a24a;border-radius:10px;padding:4px 12px;margin-top:4px;word-break:break-all}
-.payment__code{display:block;margin:8px 0;font:900 clamp(26px,8vw,36px)/1.1 'Karla';letter-spacing:.04em;white-space:nowrap;color:var(--red)}
-.copy{font:800 12px 'Karla';letter-spacing:.1em;text-transform:uppercase;color:var(--red);border:2px solid rgba(194,51,24,.45);border-radius:99px;padding:8px 14px;margin:2px 0 6px}
-.copy:hover{border-color:var(--red)}
-.paidbtn{margin-top:20px;font-size:18px;padding:20px 18px;background:linear-gradient(180deg,#3fae6a,#2c8a52);box-shadow:0 8px 20px rgba(44,138,82,.35),inset 0 1px 0 rgba(255,255,255,.25)}
-.paidmsg{font-size:18px;font-weight:700;color:var(--ink)}
-.wa-inline{color:#1a8a4a;font-weight:800;text-decoration:underline}
-.wa-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;margin-top:16px;padding:14px 22px;border-radius:99px;background:#25d366;color:#07351a;font:800 16px 'Karla';text-decoration:none;box-shadow:0 8px 20px rgba(37,211,102,.3)}
-.wa-btn svg{width:22px;height:22px}
-.wa-btn:hover{filter:brightness(1.06)}
-.wa-float{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom));z-index:40;display:flex;align-items:center;height:52px;min-width:52px;padding:0 15px;border-radius:99px;background:#25d366;color:#07351a;font:800 14px 'Karla';text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.35);overflow:hidden;transition:box-shadow .25s,transform .25s}
-.wa-float svg{flex:none;width:22px;height:22px}
-.wa-float__txt{max-width:0;opacity:0;white-space:nowrap;overflow:hidden;transition:max-width .3s ease,opacity .25s ease,margin .3s ease}
-.wa-float:hover,.wa-float:focus-visible,.wa-float.open{box-shadow:0 8px 24px rgba(0,0,0,.45)}
-.wa-float:hover .wa-float__txt,.wa-float:focus-visible .wa-float__txt,.wa-float.open .wa-float__txt{max-width:110px;opacity:1;margin-left:8px}
-.contact{margin:6px auto 28px;max-width:420px}
-.contact__t{font:700 24px 'Fraunces',serif;color:var(--gold-hi)}
-.contact__s{margin-top:6px;color:var(--cream-dim);font-size:15px}
-.contact .wa-btn{font-size:18px}
-.foot__c{margin-top:10px;font-size:12px}
-.foot__c a{color:rgba(233,200,135,.8);text-decoration:underline;text-underline-offset:3px}
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(8,6,24,.95);display:flex;align-items:center;justify-content:center;padding:18px}
+.lb__img{max-width:100%;max-height:calc(100vh - 100px);max-height:calc(100dvh - 100px);border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.6);object-fit:contain}
+.lb__btn{position:absolute;width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(216,162,74,.5);color:var(--gold-hi);font-size:22px;display:grid;place-items:center}
+.lb__btn:hover{background:rgba(255,255,255,.2)}
+.lb__x{top:14px;right:14px}
+.lb__p{left:12px;top:50%;transform:translateY(-50%)}
+.lb__n{right:12px;top:50%;transform:translateY(-50%)}
+.lb__c{position:absolute;bottom:16px;left:0;right:0;text-align:center;font:700 14px 'Karla';letter-spacing:.12em;color:var(--cream-dim)}
 
-/* price line + pre-reg toggle inside the card */
-.priceline{display:flex;align-items:center;gap:14px;margin-top:16px;padding:12px 14px;border-radius:12px;background:#fff6e5;border:1px solid #d8a24a}
-.priceline__now{font:900 34px/1 'Fraunces',serif;color:var(--red)}
-.priceline__txt{font-size:13px;line-height:1.4;color:#574833}
-.priceline__txt b{color:var(--ink);font-size:14px}
-.priceline__txt s{opacity:.7}
-.priceline.pre{background:#e8f6ec;border-color:#6bbf8a}
-.priceline.pre .priceline__now{color:#1f7a45}
-.preg{display:block;width:100%;margin-top:12px;padding:11px 12px;border:1.5px dashed #cdbb92;border-radius:10px;font:700 13.5px 'Karla';color:#574833;text-align:center}
-.preg u{color:var(--red);font-weight:800}
-.preg[aria-pressed="true"]{border-style:solid;border-color:#6bbf8a;background:#e8f6ec}
-.preg__note{margin-top:8px;font-size:13px;line-height:1.5;color:#574833}
-.preg__fail{margin-top:10px;padding:12px;border-radius:10px;background:#fde8e3;color:#7a2312;font-size:13.5px;line-height:1.5}
-.preg__btns{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:8px}
-.preg__btns .linkbtn{margin-top:0}
+/* thanks */
+.thanks{margin:30px auto 0;max-width:560px;text-align:center;padding:26px 20px;border-radius:22px;background:rgba(255,255,255,.05);border:1px solid rgba(216,162,74,.3)}
+.thanks__logo{width:130px;height:130px;margin:0 auto 14px;display:block;border-radius:50%;box-shadow:0 8px 26px rgba(0,0,0,.45),0 0 26px rgba(216,162,74,.2)}
+.thanks__k{font:800 12px 'Karla';letter-spacing:.3em;color:var(--gold-soft)}
+.thanks__n{margin-top:6px;font:900 24px 'Fraunces',serif;color:var(--gold-hi)}
+.thanks__d{margin-top:6px;font-size:15.5px;line-height:1.6;color:var(--cream-dim)}
 
-.halal{text-transform:none;letter-spacing:0;font:700 12.5px 'Karla';color:#1a6b3a}
-/* yes / no pills */
-.yn{display:flex;gap:10px;margin-top:8px}
-.yn__opt{position:relative;flex:1;margin:0!important;cursor:pointer}
-.yn__opt input{position:absolute;opacity:0;pointer-events:none}
-.yn__opt span{display:block;text-align:center;padding:12px 10px;border:1.5px solid #cdbb92;border-radius:12px;
-  font:800 15px 'Karla';letter-spacing:.02em;text-transform:none;color:#574833;background:#fffaf0;transition:all .2s}
-.yn__opt input:checked+span{background:var(--red);border-color:var(--red);color:#fff7ea;box-shadow:0 4px 12px rgba(194,51,24,.3)}
-.yn__opt input:focus-visible+span{outline:2px dashed var(--gold);outline-offset:2px}
-.f.bad .yn__opt span{border-color:var(--red)}
+/* next / contact */
+.next{margin:30px auto 0;max-width:760px;text-align:center}
+.fb{margin-top:26px;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));text-align:center}
+.fb__c{display:flex;flex-direction:column;align-items:center;gap:6px;padding:24px 20px;border-radius:20px;text-decoration:none;color:var(--cream);
+  background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.03));border:1.5px solid rgba(216,162,74,.45);
+  transition:transform .3s cubic-bezier(.2,1.5,.4,1),border-color .25s,background .25s}
+.fb__c:hover,.fb__c:focus-visible{transform:translateY(-4px);border-color:var(--gold-hi);background:rgba(216,162,74,.12)}
+.fb__e{font-size:34px}
+.fb__t{font:900 21px 'Fraunces',serif;color:var(--gold-hi)}
+.fb__d{font-size:15px;line-height:1.5;color:var(--cream-dim);max-width:30ch}
+.fb__b{margin-top:10px;padding:11px 20px;border-radius:999px;background:#25d366;color:#07351a;font:800 15px 'Karla'}
+.wa{display:inline-flex;align-items:center;gap:10px;margin-top:18px;padding:15px 26px;border-radius:999px;background:#25d366;color:#07351a;font:800 17px 'Karla';text-decoration:none;box-shadow:0 10px 26px rgba(37,211,102,.3);transition:transform .3s cubic-bezier(.2,1.6,.4,1)}
+.wa:hover{transform:scale(1.04)}
+.wa svg{width:22px;height:22px}
 
-/* phone field */
-.phone{display:flex;gap:10px;align-items:flex-end}
-.phone__cc{flex:none;width:112px}
-.phone__num{flex:1;min-width:0}
-.phone__cc select{padding-right:20px}
+.foot{margin-top:60px;padding:30px 20px calc(34px + env(safe-area-inset-bottom));text-align:center;border-top:1px solid rgba(216,162,74,.18)}
+.foot a{color:rgba(233,200,135,.85)}
+.foot__a{font:800 11px 'Karla';letter-spacing:.26em;color:var(--gold-soft)}
+.foot__b{margin-top:8px;font:700 11px 'Karla';letter-spacing:.2em;color:rgba(233,200,135,.6)}
 
-/* pay step extras */
-.done__again{margin-bottom:10px;padding:9px 12px;border-radius:10px;background:#e7f0ff;color:#27406e;font-size:13.5px;font-weight:700}
-.step__sub.tiernote{color:#1f7a45;font-weight:800}
-a.tag{text-decoration:none}
-a.tag:hover{border-style:solid}
-.revbtns{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-.revopen,.revqr{font:800 12.5px 'Karla';letter-spacing:.06em;padding:9px 14px;border-radius:99px}
-.revopen{background:var(--ink);color:#fff7ea;text-decoration:none}
-.revqr{border:2px solid rgba(43,33,21,.35);color:var(--ink)}
-.revqr:hover{border-color:var(--ink)}
-.qrbox{margin-top:12px;text-align:center}
-.qrbox img{width:min(100%,240px);border-radius:12px;border:1px solid #d8a24a;background:#fff}
-.qrbox p{font-size:12.5px;color:#7a6540;margin-top:6px}
-.copy{display:inline-flex;align-items:center;gap:8px;white-space:nowrap;letter-spacing:.05em;position:relative;overflow:hidden;transition:background .2s,color .2s,border-color .2s}
-.copy__ico{font-size:15px;line-height:1}
-.copy.copied{background:#2c8a52;border-color:#2c8a52;color:#fff;animation:copyBounce .5s cubic-bezier(.3,1.7,.4,1)}
-.copy.copied .copy__ico{animation:copyTick .5s ease}
-@keyframes copyBounce{0%{transform:scale(1)}35%{transform:scale(.88)}65%{transform:scale(1.12)}100%{transform:scale(1)}}
-@keyframes copyTick{0%{transform:scale(.2) rotate(-40deg);opacity:0}100%{transform:none;opacity:1}}
-.cashline{margin-top:16px;font:700 16px 'Karla';color:#574833;text-align:center}
-.cashline a{display:inline-block;margin-left:4px;padding:6px 14px;border-radius:99px;background:#e8f6ec;border:1.5px solid #6bbf8a;color:#1a6b3a;font-weight:800;text-decoration:none}
-.cashline a:hover{background:#d3efdc}
-.cashline__note{margin-top:6px;font-size:12.5px;text-align:center;color:#8a744e}
-
-/* ticket states (waiting / confirmed / used) */
-.pass{margin-top:6px;padding:20px 16px 18px;border-radius:16px;text-align:center;background:linear-gradient(180deg,#fffaf0,#fff1d6);border:2px solid #d8a24a;position:relative}
-.pass.ok{border-color:#2c8a52;background:linear-gradient(180deg,#f3fff7,#dff5e7)}
-.pass.wait{border-color:#d8a24a}
-.pass.used{border-color:#8a744e;background:#efe6d3}
-.pass__stamp{display:inline-block;font:900 15px 'Karla';letter-spacing:.2em;color:#fff;background:#2c8a52;border-radius:99px;padding:6px 16px}
-.pass.wait .pass__stamp{background:#d8a24a;color:#2b2115}
-.pass.used .pass__stamp{background:#8a744e}
-.pass__big{font:900 clamp(26px,7vw,34px)/1.1 'Fraunces',serif;color:var(--ink);margin:14px 0 4px}
-.pass__name{font:800 22px 'Karla';color:var(--ink);word-break:break-word}
-.pass__ref{margin-top:10px;font:700 11px 'Karla';letter-spacing:.16em;color:#7a6540;text-transform:uppercase}
-.pass__code{font:900 clamp(26px,8vw,36px)/1.15 'Karla';letter-spacing:.05em;color:var(--red);white-space:nowrap}
-.pass__msg{margin-top:12px;font-size:15px;line-height:1.55;color:#574833}
-.pass__where{display:inline-block;margin-top:12px;font-size:13.5px;color:#574833}
-.pass__where a{color:var(--red);font-weight:800}
-.pass__note{margin-top:14px;padding:11px 12px;border-radius:10px;background:#fff;border-left:4px solid var(--gold);text-align:left;font-size:14px;line-height:1.5;color:#3a2e1f;white-space:pre-wrap;word-break:break-word}
-.pass__note b{display:block;font:800 10px 'Karla';letter-spacing:.14em;color:#8a744e;text-transform:uppercase;margin-bottom:3px}
-.pass .linkbtn{margin-top:16px}
-.pass .send{margin-top:14px}
-.paycheck{margin-top:16px;padding:14px;border-radius:12px;background:#fff;border:1.5px dashed #d8a24a;text-align:center}
-.paycheck__h{font:800 15px 'Karla';color:var(--ink)}
-.paycheck__t{margin-top:6px;font-size:15px;line-height:1.7;color:#574833}
-.paycheck__t b{color:var(--red)}
-.paycheck .tag{font-size:18px;padding:2px 10px;margin:2px 0}
-.paycheck .revopen{display:inline-block;margin-top:10px}
-.lookres{margin-top:16px}
-.lookres .none{padding:12px;border-radius:10px;background:#fde8e3;color:#7a2312;font-size:14px;line-height:1.5}
-.lookres .none a{color:#7a2312;font-weight:800}
-.linkbtn{margin-top:18px;font:800 11.5px 'Karla';letter-spacing:.14em;text-transform:uppercase;
-  color:var(--red);border-bottom:2px solid rgba(194,51,24,.4);padding-bottom:3px}
-.linkbtn:hover{border-color:var(--red)}
-.lit{animation:lit 2.6s ease-in-out infinite}
-@keyframes lit{0%,100%{filter:drop-shadow(0 4px 10px rgba(255,140,60,.25))}
-  50%{filter:drop-shadow(0 4px 22px rgba(255,170,80,.6))}}
-
-/* ═══════════ the sponsor block — headline, name, city, logo, hint ═══════════ */
-.foot{padding:38px 22px calc(34px + env(safe-area-inset-bottom));text-align:center;
-  border-top:1px solid rgba(216,162,74,.18)}
-.hoststamp{display:flex;flex-direction:column;align-items:center;margin-bottom:26px}
-.hoststamp__cap{display:flex;flex-direction:column;align-items:center;gap:7px;
-  opacity:0;transform:translateY(6px);
-  transition:opacity .6s ease .55s,transform .6s ease .55s}
-.hoststamp.in .hoststamp__cap{opacity:1;transform:none}
-.hoststamp__label{font:800 13px 'Karla';letter-spacing:.32em;color:var(--gold-soft)}
-.hoststamp__name{font:800 11px 'Karla';letter-spacing:.22em;color:var(--cream)}
-.hoststamp__where{font:700 8.5px 'Karla';letter-spacing:.34em;color:rgba(233,200,135,.6)}
-.hoststamp__ring{display:block;position:relative;width:104px;height:104px;margin-top:16px;
-  cursor:pointer;transition:transform .3s cubic-bezier(.2,1.6,.4,1)}
-.hoststamp__ring:hover,.hoststamp__ring:focus-visible{transform:scale(1.07)}
-.hoststamp__ring:active{transform:scale(.93)}
-.hoststamp__ring::before{content:"";position:absolute;inset:-9px;border-radius:50%;
-  border:1px dashed rgba(216,162,74,.5);animation:ringspin 70s linear infinite}
-@keyframes ringspin{to{transform:rotate(360deg)}}
-.hoststamp__img{position:relative;width:100%;height:100%;border-radius:50%;display:block;
-  object-fit:cover;opacity:0;background:#241a38;
-  border:1.5px solid rgba(216,162,74,.65);
-  box-shadow:0 8px 26px rgba(0,0,0,.45),0 0 26px rgba(216,162,74,.18);
-  transform:rotate(-8deg)}
-.hoststamp.in .hoststamp__img{animation:stampIn .6s cubic-bezier(.2,1.5,.3,1) .18s both}
-@keyframes stampIn{from{opacity:0;transform:rotate(-20deg) scale(1.9)}
-  65%{opacity:1}
-  to{opacity:1;transform:rotate(-8deg) scale(1)}}
-.hoststamp__join{margin-top:15px;font:700 9px 'Karla';letter-spacing:.26em;
-  color:rgba(233,200,135,.7);opacity:0;transform:translateY(4px);
-  transition:opacity .6s ease .85s,transform .6s ease .85s}
-.hoststamp.in .hoststamp__join{opacity:1;transform:none}
-.hoststamp.nologo{display:none}
-
-.foot__a{font:800 10px 'Karla';letter-spacing:.26em;color:var(--gold-soft)}
-.foot__b{margin-top:8px;font:700 9.5px 'Karla';letter-spacing:.22em;color:rgba(233,200,135,.55)}
-
-.rv{opacity:0;transform:translateY(18px);
-  transition:opacity .7s ease var(--d,0s),transform .7s cubic-bezier(.2,.7,.2,1) var(--d,0s)}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease var(--d,0s),transform .7s cubic-bezier(.2,.7,.2,1) var(--d,0s)}
 .rv.in{opacity:1;transform:none}
-
-.spark{position:fixed;z-index:120;pointer-events:none;opacity:0;
-  clip-path:polygon(50% 0,63% 37%,100% 50%,63% 63%,50% 100%,37% 63%,0 50%,37% 37%)}
-
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  .up,.pop,.fade,.moon,.skyline,.valance,.hang,.lantern,
-  .star.tw,.skyline .w,.perk__float,.cta::after,.cue__i,.lit,.peek{animation:none!important}
-  .hoststamp__ring::before{animation:none!important}
-  .hoststamp.in .hoststamp__img{animation:none!important;opacity:1!important}
-  .hoststamp__cap,.hoststamp__join{opacity:1!important;transform:none!important;transition:none!important}
-  .hoststamp__img{opacity:1!important}
-  .hoststamp__ring{transition:none!important}
+  .up,.lantern,.star.tw{animation:none!important}
   .rv{opacity:1!important;transform:none!important;transition:none!important}
-  .perk__orb,.cta,.send{transition:none!important}
+  .gal__b,.gal__b img,.wa{transition:none!important}
 }
 </style>
 </head>
 <body>
 
-<!-- shared gradients for the lanterns -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
-    <linearGradient id="lanA" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#ffd98c"/><stop offset=".55" stop-color="#f6a23c"/><stop offset="1" stop-color="#dd7a24"/>
-    </linearGradient>
-    <linearGradient id="lanB" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#ffb27a"/><stop offset=".55" stop-color="#ef6136"/><stop offset="1" stop-color="#c83018"/>
-    </linearGradient>
-    <radialGradient id="lanGlow">
-      <stop offset="0" stop-color="rgba(255,190,100,.55)"/><stop offset=".65" stop-color="rgba(255,170,80,.18)"/><stop offset="1" stop-color="rgba(255,170,80,0)"/>
-    </radialGradient>
+    <linearGradient id="lanA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd98c"/><stop offset=".55" stop-color="#f6a23c"/><stop offset="1" stop-color="#dd7a24"/></linearGradient>
+    <linearGradient id="lanB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffb27a"/><stop offset=".55" stop-color="#ef6136"/><stop offset="1" stop-color="#c83018"/></linearGradient>
+    <radialGradient id="lanGlow"><stop offset="0" stop-color="rgba(255,190,100,.55)"/><stop offset=".65" stop-color="rgba(255,170,80,.18)"/><stop offset="1" stop-color="rgba(255,170,80,0)"/></radialGradient>
+    <symbol id="lantern" viewBox="0 0 70 130">
+      <ellipse cx="35" cy="56" rx="32" ry="42" fill="url(#lanGlow)"/>
+      <line x1="35" y1="0" x2="35" y2="15" stroke="#caa24d" stroke-width="2"/>
+      <rect x="25" y="15" width="20" height="7" rx="2" fill="#9a6b28"/>
+      <path d="M35 25C53 25 59 41 59 57 59 76 48 86 35 86 22 86 11 76 11 57 11 41 17 25 35 25Z" fill="currentColor" stroke="#8a4a1c" stroke-width="1.4"/>
+      <path d="M24 27C16 39 16 73 24 83M46 27C54 39 54 73 46 83M35 25V86" stroke="rgba(122,44,12,.45)" stroke-width="1.1" fill="none"/>
+      <path d="M22 36C18 42 17 47 17 52" stroke="rgba(255,255,255,.35)" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+      <rect x="27" y="86" width="16" height="6" rx="2" fill="#9a6b28"/>
+      <line x1="35" y1="92" x2="35" y2="103" stroke="#caa24d" stroke-width="1.8"/>
+      <path d="M31 103h8l-4 11z" fill="#d8a24a"/>
+    </symbol>
   </defs>
 </svg>
 
-<div class="stage">
+<div class="page">
 
-  <!-- urgent bar that stays at the top while scrolling -->
-  <a class="topbar" href="#join" data-ten-only><b>⏰ €10 tickets end Thursday 2PM, then €15</b><span class="cd"></span><u>Get yours →</u></a>
-  <a class="topbar topbar--sale" href="#join" data-fifteen-only><b>🎟️ Tickets on sale · Event is this Saturday 17th</b><u>Get yours →</u></a>
+  <!-- ═══════════ TABS ═══════════ -->
+  <nav class="tabs" aria-label="Page sections">
+    <div class="tabs__in">
+      <span class="tabs__brand">ASIAN SOCIETY · CULTURAL EVENT</span>
+      <a class="tab" href="#event" data-sec="info">Info</a>
+      <a class="tab" href="#photos" data-sec="photos">Photos</a>
+      <a class="tab" href="#next" data-sec="contact">Contact</a>
+    </div>
+  </nav>
 
-  <!-- ═══════════ THE NIGHT SCENE ═══════════ -->
+  <!-- ═══════════ HERO ═══════════ -->
   <header class="hero" id="top">
-    <div class="glow" aria-hidden="true"></div>
     <div class="stars" aria-hidden="true"></div>
-
-    <svg class="moon" viewBox="0 0 44 44" aria-hidden="true">
-      <path d="M28 4a17 17 0 1 0 10 30A16 16 0 0 1 28 4z" fill="#f2dfae"/>
-    </svg>
-
-    <!-- city skyline with glowing windows -->
-    <svg class="skyline" viewBox="0 0 390 170" preserveAspectRatio="none" aria-hidden="true">
-      <path fill="#2a2352" d="M0 170v-52h16v-16h20v16h14v-24h28v24h12v-12h24v12h10v-20h32v20h14v-14h28v14h12v-22h32v22h14v-12h26v12h10v-18h30v18h14v-10h24v10h30v52z"/>
-      <g fill="#1b1738">
-        <rect x="0" y="112" width="34" height="58"/>
-        <path d="M34 170v-46h6v-10h4v-6h4v6h4v10h6v46z"/>
-        <rect x="66" y="52" width="6" height="118"/><circle cx="69" cy="47" r="5"/><rect x="68.2" y="34" width="1.6" height="9"/>
-        <rect x="80" y="96" width="44" height="74"/>
-        <rect x="128" y="82" width="96" height="88"/>
-        <path d="M152 82c0-24 8-34 20-44 12 10 20 20 20 44z"/>
-        <rect x="170.6" y="26" width="2.8" height="13"/><circle cx="172" cy="23" r="2.6"/>
-        <path d="M132 82c0-12 4-17 10-22 6 5 10 10 10 22z"/>
-        <path d="M204 82c0-12 4-17 10-22 6 5 10 10 10 22z"/>
-        <rect x="120" y="60" width="5" height="110"/><circle cx="122.5" cy="56" r="4"/>
-        <rect x="227" y="60" width="5" height="110"/><circle cx="229.5" cy="56" r="4"/>
-        <rect x="232" y="104" width="38" height="66"/>
-        <path d="M270 170v-40h6v-8h4v-4h4v4h6v8h6v40z"/>
-        <rect x="300" y="118" width="34" height="52"/>
-        <path d="M306 118c0-14 4-19 11-25 7 6 11 11 11 25z"/>
-        <rect x="340" y="58" width="6" height="112"/><circle cx="343" cy="53" r="5"/><rect x="342.2" y="40" width="1.6" height="9"/>
-        <rect x="352" y="112" width="38" height="58"/>
-      </g>
-      <g fill="#ffc76a" opacity=".85">
-        <rect x="9" y="126" width="4" height="7" rx="1.5"/>
-        <rect x="19" y="126" width="4" height="7" rx="1.5" class="w" style="animation-delay:-1.4s"/>
-        <rect x="41" y="132" width="4" height="7" rx="1.5"/>
-        <rect x="88" y="108" width="4" height="7" rx="1.5"/>
-        <rect x="98" y="108" width="4" height="7" rx="1.5" class="w" style="animation-delay:-.7s"/>
-        <rect x="108" y="108" width="4" height="7" rx="1.5"/>
-        <rect x="136" y="100" width="5" height="9" rx="2"/>
-        <rect x="150" y="100" width="5" height="9" rx="2" class="w" style="animation-delay:-2.1s"/>
-        <rect x="164" y="100" width="5" height="9" rx="2"/>
-        <rect x="178" y="100" width="5" height="9" rx="2"/>
-        <rect x="192" y="100" width="5" height="9" rx="2" class="w" style="animation-delay:-1s"/>
-        <rect x="143" y="120" width="5" height="9" rx="2"/>
-        <rect x="164" y="120" width="5" height="9" rx="2" class="w" style="animation-delay:-2.8s"/>
-        <rect x="185" y="120" width="5" height="9" rx="2"/>
-        <rect x="240" y="116" width="4" height="7" rx="1.5"/>
-        <rect x="250" y="116" width="4" height="7" rx="1.5" class="w" style="animation-delay:-1.8s"/>
-        <rect x="308" y="130" width="4" height="7" rx="1.5"/>
-        <rect x="318" y="130" width="4" height="7" rx="1.5"/>
-        <rect x="360" y="126" width="4" height="7" rx="1.5" class="w" style="animation-delay:-.4s"/>
-        <rect x="370" y="126" width="4" height="7" rx="1.5"/>
-      </g>
-    </svg>
-
-    <!-- curtain valance -->
     <svg class="valance" viewBox="0 0 390 46" preserveAspectRatio="none" aria-hidden="true">
       <path fill="#571a2b" d="M0 10 Q15 44 30 10 Q45 44 60 10 Q75 44 90 10 Q105 44 120 10 Q135 44 150 10 Q165 44 180 10 Q195 44 210 10 Q225 44 240 10 Q255 44 270 10 Q285 44 300 10 Q315 44 330 10 Q345 44 360 10 Q375 44 390 10 V0 H0 Z"/>
       <path fill="none" stroke="#d8a24a" stroke-width="2" d="M0 10 Q15 44 30 10 Q45 44 60 10 Q75 44 90 10 Q105 44 120 10 Q135 44 150 10 Q165 44 180 10 Q195 44 210 10 Q225 44 240 10 Q255 44 270 10 Q285 44 300 10 Q315 44 330 10 Q345 44 360 10 Q375 44 390 10"/>
-      <path stroke="#d8a24a" stroke-width="1.5" d="M15 27v7M45 27v7M75 27v7M105 27v7M135 27v7M165 27v7M195 27v7M225 27v7M255 27v7M285 27v7M315 27v7M345 27v7M375 27v7"/>
     </svg>
+    <div class="hang hang--a"><svg class="lantern" style="--sw:5.6s;--swd:-1.2s;color:#ef6136" viewBox="0 0 70 130" aria-hidden="true"><use href="#lantern"/></svg></div>
+    <div class="hang hang--b"><svg class="lantern" style="--sw:7s;--swd:-3.6s;color:#f6a23c" viewBox="0 0 70 130" aria-hidden="true"><use href="#lantern"/></svg></div>
+    <div class="hang hang--c"><svg class="lantern" style="--sw:6.2s;--swd:-2.4s;color:#f6a23c" viewBox="0 0 70 130" aria-hidden="true"><use href="#lantern"/></svg></div>
+    <div class="hang hang--d"><svg class="lantern" style="--sw:5.2s;--swd:-.6s;color:#ef6136" viewBox="0 0 70 130" aria-hidden="true"><use href="#lantern"/></svg></div>
 
-    <!-- lanterns -->
-    <div class="hang hang--a" style="--ld:.12s">
-      <svg class="lantern" style="--sw:5.6s;--swd:-1.2s" viewBox="0 0 70 130" aria-hidden="true">
-        <ellipse cx="35" cy="56" rx="32" ry="42" fill="url(#lanGlow)"/>
-        <line x1="35" y1="0" x2="35" y2="15" stroke="#caa24d" stroke-width="2"/>
-        <rect x="25" y="15" width="20" height="7" rx="2" fill="#9a6b28"/>
-        <path d="M35 25C53 25 59 41 59 57 59 76 48 86 35 86 22 86 11 76 11 57 11 41 17 25 35 25Z" fill="url(#lanB)" stroke="#8a4a1c" stroke-width="1.4"/>
-        <path d="M24 27C16 39 16 73 24 83M46 27C54 39 54 73 46 83M35 25V86" stroke="rgba(122,44,12,.45)" stroke-width="1.1" fill="none"/>
-        <path d="M22 36C18 42 17 47 17 52" stroke="rgba(255,255,255,.35)" stroke-width="2.2" stroke-linecap="round" fill="none"/>
-        <rect x="27" y="86" width="16" height="6" rx="2" fill="#9a6b28"/>
-        <line x1="35" y1="92" x2="35" y2="103" stroke="#caa24d" stroke-width="1.8"/>
-        <path d="M31 103h8l-4 11z" fill="#d8a24a"/>
-      </svg>
-    </div>
-    <div class="hang hang--b" style="--ld:.22s">
-      <svg class="lantern" style="--sw:7s;--swd:-3.6s" viewBox="0 0 70 130" aria-hidden="true">
-        <ellipse cx="35" cy="56" rx="32" ry="42" fill="url(#lanGlow)"/>
-        <line x1="35" y1="0" x2="35" y2="15" stroke="#caa24d" stroke-width="2"/>
-        <rect x="25" y="15" width="20" height="7" rx="2" fill="#9a6b28"/>
-        <path d="M35 25C53 25 59 41 59 57 59 76 48 86 35 86 22 86 11 76 11 57 11 41 17 25 35 25Z" fill="url(#lanA)" stroke="#8a4a1c" stroke-width="1.4"/>
-        <path d="M24 27C16 39 16 73 24 83M46 27C54 39 54 73 46 83M35 25V86" stroke="rgba(122,44,12,.45)" stroke-width="1.1" fill="none"/>
-        <path d="M22 36C18 42 17 47 17 52" stroke="rgba(255,255,255,.35)" stroke-width="2.2" stroke-linecap="round" fill="none"/>
-        <rect x="27" y="86" width="16" height="6" rx="2" fill="#9a6b28"/>
-        <line x1="35" y1="92" x2="35" y2="103" stroke="#caa24d" stroke-width="1.8"/>
-        <path d="M31 103h8l-4 11z" fill="#d8a24a"/>
-      </svg>
-    </div>
-    <div class="hang hang--c" style="--ld:.3s">
-      <svg class="lantern" style="--sw:6.2s;--swd:-2.4s" viewBox="0 0 70 130" aria-hidden="true">
-        <ellipse cx="35" cy="56" rx="32" ry="42" fill="url(#lanGlow)"/>
-        <line x1="35" y1="0" x2="35" y2="15" stroke="#caa24d" stroke-width="2"/>
-        <rect x="25" y="15" width="20" height="7" rx="2" fill="#9a6b28"/>
-        <path d="M35 25C53 25 59 41 59 57 59 76 48 86 35 86 22 86 11 76 11 57 11 41 17 25 35 25Z" fill="url(#lanA)" stroke="#8a4a1c" stroke-width="1.4"/>
-        <path d="M24 27C16 39 16 73 24 83M46 27C54 39 54 73 46 83M35 25V86" stroke="rgba(122,44,12,.45)" stroke-width="1.1" fill="none"/>
-        <rect x="27" y="86" width="16" height="6" rx="2" fill="#9a6b28"/>
-        <line x1="35" y1="92" x2="35" y2="103" stroke="#caa24d" stroke-width="1.8"/>
-        <path d="M31 103h8l-4 11z" fill="#d8a24a"/>
-      </svg>
-    </div>
-
-    <!-- the message -->
-    <div class="hero__content">
-      <p class="kicker up" style="--d:.35s">ASIAN SOCIETY × TRAKIA UNIVERSITY</p>
+    <div class="wrap hero__in">
+      <p class="kicker up" style="--d:.2s">ASIAN SOCIETY × TRAKIA UNIVERSITY</p>
       <h1 class="title">
-        <span class="t1 up" style="--d:.5s">CULTURAL EVENT</span>
-        <span class="t2 pop" style="--d:.78s">17 OCTOBER</span>
+        <span class="t1 up" style="--d:.35s">CULTURAL EVENT</span>
+        <span class="t2 up" style="--d:.5s">WHAT A NIGHT!</span>
       </h1>
-      <p class="when up" style="--d:.9s">SATURDAY · 6PM – 10PM</p>
-      <p class="sub up" style="--d:1s">Dress up in your cultural clothes!</p>
-      <a class="venue up" style="--d:1.15s" href="https://maps.app.goo.gl/PGVZ2q4MvKAYjRC27" target="_blank" rel="noopener" aria-label="Open the venue in Google Maps">
-        <svg class="venue__pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.500C5 14.800 12 21 12 21z"/><circle cx="12" cy="9.500" r="2.500"/></svg>
-        <span class="venue__txt">
-          <b>International Youth Center</b>
-          <span>bul. “Tsar Simeon Veliki” 55, 6000 Stara Zagora</span>
-          <em>Tap to open in Maps →</em>
-        </span>
-      </a>
-      <a class="votebtn up" style="--d:1.2s" href="/vote" data-closed-only>
-        <span class="votebtn__t">🏆 VOTE BEST DRESSED →</span>
-        <span class="votebtn__s">Anonymous. One vote per phone</span>
-      </a>
-      <p class="chip up" style="--d:1.25s" data-open-only>TICKETS ON SALE NOW · LIMITED SPOTS</p>
-      <p class="chip up" style="--d:1.25s" data-closed-only>TICKET SALES ARE CLOSED · SEE YOU THERE!</p>
-      <p class="evcount up" style="--d:1.28s"><span class="ev"></span></p>
-      <div class="sharp up" style="--d:1.3s" data-closed-only>
-        <p><b>🕕 The event starts at 6PM sharp!</b></p>
-        <p><b>🍽️ Food is first come, first served</b>, so don't be late!</p>
+      <p class="sub up" style="--d:.7s">Thank you to everyone who came dressed in their culture 🏮</p>
+      <div class="chips up" style="--d:.85s">
+        <span class="chip">Saturday 17 October 2026</span>
+        <span class="chip">6PM – 10PM</span>
+        <a class="chip" href="https://maps.app.goo.gl/PGVZ2q4MvKAYjRC27" target="_blank" rel="noopener">📍 International Youth Center</a>
       </div>
-      <div class="dl pop" style="--d:1.3s" data-ten-only>
-        <span class="dl__top">⏰ LAST CHANCE AT €10</span>
-        <span class="dl__date">ENDS THURSDAY 2PM</span>
-        <span class="dl__left cd"></span>
-      </div>
-      <div class="dl pop" style="--d:1.3s" data-early-only>
-        <span class="dl__top">⏰ EXTENDED FOR THE WEEKEND · LAST CHANCE</span>
-        <span class="dl__date">ENDS 11TH OCTOBER</span>
-        <span class="dl__left cd"></span>
-      </div>
-      <a class="cta pop" style="--d:1.35s" href="#ticket" data-closed-only>VIEW MY TICKET →</a>
-      <a class="cta pop" style="--d:1.35s" href="#join" data-open-only>GET YOUR TICKETS NOW!
-        <svg viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1l7 7 7-7"/></svg>
-      </a>
-      <p class="fine up" style="--d:1.5s" data-early-only><b>EARLY BIRD: 20% OFF</b> <s>€10</s> <b>€8</b><br>Last chance! From the 12th tickets are €10. Spots are limited.</p>
-      <p class="fine up" style="--d:1.5s" data-ten-only><b>TICKETS: €10</b>, then <b>€15</b> from Thursday 15th at 2PM.<br>Spots are limited. Don't leave it too late!</p>
-      <p class="fine up" style="--d:1.5s" data-fifteen-only><b>TICKETS: €15</b><br>The event is this Saturday. Spots are limited, so grab yours now.</p>
-      <p class="herolinks up" style="--d:1.6s"><a class="hlink" href="#ticket">Already got a ticket?</a><a class="hlink" href="#join" data-prereg data-early-only>Pre-registered? 30% off</a></p>
-      <a class="cue fade" style="--d:1.7s" href="#onnight" aria-label="See what's on the night">
-        <svg class="cue__i" viewBox="0 0 20 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l8 8 8-8"/></svg>
-      </a>
     </div>
   </header>
 
-  <!-- ═══════════ WHAT'S ON — on the carpet ═══════════ -->
-  <main class="below">
-    <section class="onnight" id="onnight">
-      <h2 class="onnight__h rv">ON THE NIGHT</h2>
-      <div class="rug rv" style="--d:.1s">
-        <ul class="perks">
-          <li>
-            <button class="perk" type="button">
-              <span class="perk__float" style="--fd:0s"><span class="perk__orb">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3 5 6l2 3 2-1.2V20h6V7.8L17 9l2-3-4-3c0 1.8-1.3 2.8-3 2.8s-3-1-3-2.8z"/><path d="M19.5 1.5v3M18 3h3"/></svg>
-              </span></span>
-              <span class="perk__txt">Best dressed competitions!</span>
-            </button>
-          </li>
-          <li>
-            <button class="perk" type="button">
-              <span class="perk__float" style="--fd:-.9s"><span class="perk__orb">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17.5V21M7 3h10v6a5 5 0 0 1-10 0V3zM7 5H4v1.5A3 3 0 0 0 7 9.5M17 5h3v1.5a3 3 0 0 1-3 3"/></svg>
-              </span></span>
-              <span class="perk__txt">Prizes to be won!</span>
-            </button>
-          </li>
-          <li>
-            <button class="perk" type="button">
-              <span class="perk__float" style="--fd:-4s"><span class="perk__orb">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="2"/><ellipse cx="12" cy="6.2" rx="2" ry="3.4"/><ellipse cx="12" cy="17.8" rx="2" ry="3.4"/><ellipse cx="6.2" cy="12" rx="3.4" ry="2"/><ellipse cx="17.8" cy="12" rx="3.4" ry="2"/></svg>
-              </span></span>
-              <span class="perk__txt">Free Henna / Mehndi!</span>
-            </button>
-          </li>
-          <li>
-            <button class="perk" type="button">
-              <span class="perk__float" style="--fd:-1.7s"><span class="perk__orb">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="4.6"/><circle cx="8.3" cy="8.3" r="1.5" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"/><circle cx="15.7" cy="15.7" r="1.5" fill="currentColor" stroke="none"/></svg>
-              </span></span>
-              <span class="perk__txt">Games to play!</span>
-            </button>
-          </li>
-          
-          <li>
-            <button class="perk" type="button">
-              <span class="perk__float" style="--fd:-3.3s"><span class="perk__orb">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5h16a8 8 0 0 1-4.3 6.6 8.2 8.2 0 0 1-7.4 0A8 8 0 0 1 4 12.5z"/><path d="M9.5 9c-.9-1.1.9-2.1 0-3.3M14.5 9c-.9-1.1.9-2.1 0-3.3"/></svg>
-              </span></span>
-              <span class="perk__txt">Food and Snacks included!</span>
-            </button>
-          </li>
-          
-        </ul>
-      </div>
-    </section>
+  <main>
 
-    <!-- ═══════════ AGENDA ═══════════ -->
-    <section class="agenda" id="agenda">
-      <h2 class="agenda__h rv">THE PLAN</h2>
-      <p class="agenda__lead rv"><b>6PM sharp!</b> We start on time, so please don't be late. Food is <b>first come, first served</b>.</p>
-      <ol class="agenda__list rv" style="--d:.1s">
-        <li class="hl"><span class="t">6:00 PM</span><span class="w">Event starts <em>SHARP!</em></span></li>
-        <li><span class="t dot">•</span><span class="w">Opening</span></li>
-        <li><span class="t dot">•</span><span class="w">Get-to-know-you Bingo <small>Remember everyone's names, you'll need them to vote!</small></span></li>
-        <li><span class="t dot">•</span><span class="w">Food <small>First come, first served. Plus a little surprise 🎁</small></span></li>
-        <li><span class="t dot">•</span><span class="w">Trivia with music</span></li>
-        <li><span class="t dot">•</span><span class="w">Desserts &amp; Chai</span></li>
-        <li><span class="t dot">•</span><span class="w">Musical Chairs</span></li>
-        <li><span class="t dot">•</span><span class="w">Final scores &amp; Best Dressed awards 🏆</span></li>
-        <li class="hl"><span class="t">10:00 PM</span><span class="w">End</span></li>
-      </ol>
-    </section>
+    <!-- ═══════════ THE EVENT ═══════════ -->
+    <section id="event">
+      <div class="wrap">
+        <h2 class="h rv">THE EVENT</h2>
+        <p class="lead rv" style="--d:.08s">On <b>Saturday 17 October</b>, Asian Society and Trakia University filled the International Youth Center in Stara Zagora with colour, culture and good company. Students from all kinds of backgrounds came <b>dressed in their cultural clothes</b> to play games, eat together, get henna done and celebrate side by side.</p>
 
-    <!-- ═══════════ TICKET PRICES ═══════════ -->
-    <section class="tickets" id="prices">
-      <h2 class="tickets__h rv">TICKETS</h2>
-      <div class="dlbar rv" style="--d:.05s" data-early-only><b>⏰ Extended for the weekend! Last chance, ends 11th October</b><span class="cd"></span></div>
-      <div class="dlbar rv" style="--d:.05s" data-ten-only><b>⏰ €10 tickets end Thursday 15th at 2PM</b><span class="cd"></span></div>
-      <div class="tiers rv" style="--d:.1s" data-ten-only>
-        <a class="tier now" href="#join"><div><p class="tier__n">Discount price<span class="tier__tag">ON NOW</span></p><p class="tier__d">Last chance at this price</p></div><div class="tier__r"><p class="tier__disc"><span class="tier__off">ONLY</span></p><p class="tier__p">€10</p></div></a>
-        <div class="tier old"><div><p class="tier__n">From Thursday 2PM</p><p class="tier__d">Price goes up</p></div><p class="tier__p" style="text-decoration:none;opacity:.75">€15</p></div>
-      </div>
-      <div class="tiers rv" style="--d:.1s" data-fifteen-only>
-        <a class="tier now" href="#join"><div><p class="tier__n">Ticket<span class="tier__tag">ON SALE</span></p><p class="tier__d">Limited spots</p></div><p class="tier__p">€15</p></a>
-      </div>
-      <div class="tiers rv" style="--d:.1s" data-early-only>
-        <div class="tier old"><div><p class="tier__n">Normal price</p><p class="tier__d">What tickets cost after the early bird</p></div><p class="tier__p">€10</p></div>
-        <a class="tier now" id="tierEarly" href="#join" data-early><div><p class="tier__n">Early bird<span class="tier__tag">ON NOW</span></p><p class="tier__d">Extended for the weekend! Only until 11th October</p><span class="tier__go" id="earlyGo" hidden>Tap to switch back →</span></div><div class="tier__r"><p class="tier__disc"><s>€10</s><span class="tier__off">20% OFF</span></p><p class="tier__p">€8</p></div></a>
-        <a class="tier first" id="tierFirst" href="#join" data-prereg><div><p class="tier__n">First release<span class="tier__tag" hidden>YOURS</span></p><p class="tier__d">Only for people who pre-registered</p><span class="tier__go">Pre-registered? Tap here →</span></div><div class="tier__r"><p class="tier__disc"><s>€10</s><span class="tier__off">30% OFF</span></p><p class="tier__p">€7</p></div></a>
-      </div>
-      <p class="tickets__note rv" style="--d:.15s" data-early-only>Normal tickets are <b>€10</b>. Early bird tickets are <b>20% off</b>, just <b>€8</b>, and have been <b>extended for the weekend, ending Sunday 11th October</b>. Pre-registered? You get <b>30% off</b> (<b>€7</b>): tap <b>“First release”</b> above. After that, tickets are €10. Spots are limited.</p>
-      <p class="tickets__note rv" style="--d:.15s" data-ten-only>This is your <b>last chance to get a ticket for €10</b>. From <b>Thursday 15th at 2PM</b> tickets are <b>€15</b>. Spots are limited, so don't wait.</p>
-      <p class="tickets__note rv" style="--d:.15s" data-fifteen-only>The event is this Saturday and spots are limited, so grab your ticket while they last.</p>
-    </section>
-
-    <!-- ═══════════ GET A TICKET ═══════════ -->
-    <section class="join" id="join">
-      <div class="card rv" id="card">
-        <div class="card__head">
-          <svg class="mlan" viewBox="0 0 70 96" aria-hidden="true">
-            <ellipse cx="35" cy="48" rx="30" ry="38" fill="url(#lanGlow)"/>
-            <rect x="25" y="2" width="20" height="7" rx="2" fill="#9a6b28"/>
-            <path d="M35 12C53 12 59 28 59 44 59 63 48 73 35 73 22 73 11 63 11 44 11 28 17 12 35 12Z" fill="url(#lanA)" stroke="#8a4a1c" stroke-width="1.4"/>
-            <path d="M24 14C16 26 16 60 24 70M46 14C54 26 54 60 46 70M35 12V73" stroke="rgba(122,44,12,.45)" stroke-width="1.1" fill="none"/>
-            <path d="M22 22C18 28 17 33 17 38" stroke="rgba(255,255,255,.35)" stroke-width="2.2" stroke-linecap="round" fill="none"/>
-            <rect x="27" y="73" width="16" height="6" rx="2" fill="#9a6b28"/>
-            <line x1="35" y1="79" x2="35" y2="87" stroke="#caa24d" stroke-width="1.8"/>
-            <path d="M31 87h8l-4 8z" fill="#d8a24a"/>
-          </svg>
-          <div>
-            <h2 class="card__t">Get your ticket</h2>
-            <p class="card__s">RESERVE YOUR SPOT · PAY · SEE YOUR TICKET HERE</p>
-          </div>
+        <div class="facts rv" style="--d:.12s">
+          <div class="fact"><div class="fact__i">📅</div><div class="fact__k">When</div><div class="fact__v">Saturday 17 October 2026<small>6PM to 10PM</small></div></div>
+          <div class="fact"><div class="fact__i">📍</div><div class="fact__k">Where</div><div class="fact__v">International Youth Center<small>bul. “Tsar Simeon Veliki” 55, 6000 Stara Zagora</small><small><a href="https://maps.app.goo.gl/PGVZ2q4MvKAYjRC27" target="_blank" rel="noopener">Open in Maps →</a></small></div></div>
+          <div class="fact"><div class="fact__i">🤝</div><div class="fact__k">Hosted by</div><div class="fact__v">Asian Society<small>at Trakia University</small></div></div>
         </div>
-
-        <div id="formTop">
-          <div class="dlbar dlbar--card" data-ten-only><b>⏰ €10 ends Thursday 2PM. Then €15</b><span class="cd"></span></div>
-          <div class="dlbar dlbar--card" data-early-only><b>⏰ Extended for the weekend! Ends 11th October</b><span class="cd"></span></div>
-          <div class="priceline" id="priceLine">
-            <span class="priceline__now" id="plNow">€8</span>
-            <span class="priceline__txt"><b id="plLabel">Early bird</b> <s id="plOld">€10</s><br><span id="plSub">Early bird tickets are only until 9th October! Limited spots.</span></span>
-          </div>
-          <button class="preg" id="pregBtn" type="button" aria-pressed="false" data-early-only>Already pre-registered? <u>Click here</u> to get your €7 ticket</button>
-          <p class="preg__note" id="pregNote" hidden data-early-only>Enter the <b>same email you pre-registered with</b> below and we'll give you the €7 first-release price.</p>
-          <div class="preg__fail" id="pregFail" hidden data-early-only>
-            <p>We couldn't find that email on the pre-registration list. Check for typos, or message us and we'll sort it.</p>
-            <div class="preg__btns">
-              <a class="wa-inline" data-wa href="https://wa.me/359882093176" target="_blank" rel="noopener">Message us on WhatsApp</a>
-              <button type="button" class="linkbtn" id="pregSkip">Continue at €8 instead</button>
-            </div>
-          </div>
-        </div>
-
-        <form id="reg" novalidate>
-          <div class="f" id="fEmailW">
-            <label for="fEmail">Email<span class="req">*</span></label>
-            <div class="ctl"><input id="fEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com"></div>
-            <p class="err">That email doesn't look right — mind checking it?</p>
-          </div>
-          <div class="f" id="fNameW">
-            <label for="fName">Name<span class="req">*</span></label>
-            <div class="ctl"><input id="fName" name="name" type="text" autocomplete="name" placeholder="Your name"></div>
-            <p class="err">Please tell us your name.</p>
-          </div>
-          <div class="f">
-            <label for="fPhone">Phone number<span class="opt">optional</span></label>
-            <div class="phone">
-              <div class="ctl phone__cc">
-                <select id="fCC" aria-label="Country code">
-                  <option value="+359" selected>🇧🇬 +359</option>
-                  <option value="+91">🇮🇳 +91</option><option value="+92">🇵🇰 +92</option><option value="+880">🇧🇩 +880</option>
-                  <option value="+94">🇱🇰 +94</option><option value="+977">🇳🇵 +977</option>
-                  <option value="+234">🇳🇬 +234</option><option value="+233">🇬🇭 +233</option><option value="+254">🇰🇪 +254</option><option value="+27">🇿🇦 +27</option>
-                  <option value="+20">🇪🇬 +20</option><option value="+212">🇲🇦 +212</option><option value="+962">🇯🇴 +962</option><option value="+961">🇱🇧 +961</option>
-                  <option value="+963">🇸🇾 +963</option><option value="+964">🇮🇶 +964</option><option value="+966">🇸🇦 +966</option><option value="+971">🇦🇪 +971</option>
-                  <option value="+90">🇹🇷 +90</option><option value="+98">🇮🇷 +98</option>
-                  <option value="+30">🇬🇷 +30</option><option value="+39">🇮🇹 +39</option><option value="+40">🇷🇴 +40</option><option value="+34">🇪🇸 +34</option>
-                  <option value="+33">🇫🇷 +33</option><option value="+49">🇩🇪 +49</option><option value="+31">🇳🇱 +31</option><option value="+47">🇳🇴 +47</option>
-                  <option value="+44">🇬🇧 +44</option><option value="+353">🇮🇪 +353</option><option value="+1">🇺🇸 +1</option>
-                  <option value="+86">🇨🇳 +86</option><option value="+60">🇲🇾 +60</option><option value="+65">🇸🇬 +65</option><option value="+63">🇵🇭 +63</option>
-                </select>
-              </div>
-              <div class="ctl phone__num"><input id="fPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="88 123 4567"></div>
-            </div>
-          </div>
-          <div class="f">
-            <label for="fYear">Year of study<span class="opt">optional</span></label>
-            <div class="ctl">
-              <select id="fYear" name="year">
-                <option value="" selected>Select a year…</option>
-                <option>Year 1</option><option>Year 2</option><option>Year 3</option>
-                <option>Year 4</option><option>Year 5</option><option>Year 6</option>
-                <option>Not a student</option><option>Prefer not to say</option>
-              </select>
-              <svg class="chev" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M1 1l5 5 5-5"/></svg>
-            </div>
-          </div>
-          <div class="f">
-            <label for="fBackground">Background<span class="opt">optional</span></label>
-            <div class="ctl"><input id="fBackground" name="background" type="text" autocomplete="off" placeholder="e.g. Desi, Mideast, Türk, Bulgarian…"></div>
-          </div>
-          <div class="f" id="fVeganW">
-            <label>Opt for vegan food? <span class="halal">(Non vegan is also halal)</span><span class="req">*</span></label>
-            <div class="yn" role="radiogroup" aria-label="Opt for vegan food?">
-              <label class="yn__opt"><input type="radio" name="vegan" value="yes"><span>🌱 Vegan</span></label>
-              <label class="yn__opt"><input type="radio" name="vegan" value="no"><span>Not Vegan</span></label>
-            </div>
-            <p class="err">Please choose Vegan or Not Vegan.</p>
-          </div>
-          <button class="send" type="submit" id="sendBtn">Pay</button>
-          <p class="cashline">Want to pay with cash? <a data-wa data-cash="form" href="https://wa.me/359882093176?text=Hi%21%20I%27d%20like%20to%20pay%20for%20my%20Cultural%20Event%20ticket%20with%20cash." target="_blank" rel="noopener">Msg us</a></p>
-          <p class="cashline__note">Fill in your details above first. Tapping this reserves your seat and opens WhatsApp.</p>
-        </form>
-
-        <div class="done" id="done" hidden>
-          <svg class="mlan lit" viewBox="0 0 70 96" aria-hidden="true">
-            <ellipse cx="35" cy="48" rx="30" ry="38" fill="url(#lanGlow)"/>
-            <rect x="25" y="2" width="20" height="7" rx="2" fill="#9a6b28"/>
-            <path d="M35 12C53 12 59 28 59 44 59 63 48 73 35 73 22 73 11 63 11 44 11 28 17 12 35 12Z" fill="url(#lanB)" stroke="#8a4a1c" stroke-width="1.4"/>
-            <path d="M24 14C16 26 16 60 24 70M46 14C54 26 54 60 46 70M35 12V73" stroke="rgba(122,44,12,.45)" stroke-width="1.1" fill="none"/>
-            <path d="M22 22C18 28 17 33 17 38" stroke="rgba(255,255,255,.35)" stroke-width="2.2" stroke-linecap="round" fill="none"/>
-            <rect x="27" y="73" width="16" height="6" rx="2" fill="#9a6b28"/>
-            <line x1="35" y1="79" x2="35" y2="87" stroke="#caa24d" stroke-width="1.8"/>
-            <path d="M31 87h8l-4 8z" fill="#d8a24a"/>
-          </svg>
-          <p class="done__again" id="dExisting" hidden>That email already has a ticket, so here it is again.</p>
-          <div id="payStep">
-            <h2 class="done__t">Almost there, <span id="dName"></span>!</h2>
-            <p class="done__c">Your spot isn’t reserved until you’ve paid. Do these 3 things:</p>
-            <ol class="steps">
-              <li class="step">
-                <span class="step__n">1</span>
-                <div class="step__b">
-                  <p class="step__h">Open Revolut and send</p>
-                  <p class="step__big" id="ticketPrice"></p>
-                  <p class="step__sub" id="tierNote" hidden></p>
-                  <p class="step__sub">to <a class="tag" id="revolutTag" href="https://revolut.me/siddiquico" target="_blank" rel="noopener">@siddiquico</a></p>
-                  <div class="revbtns">
-                    <a class="revopen" href="https://revolut.me/siddiquico" target="_blank" rel="noopener">Open in Revolut</a>
-                    <button type="button" class="revqr" id="qrBtn" aria-expanded="false">Show QR code</button>
-                  </div>
-                  <div class="qrbox" id="qrBox" hidden>
-                    <img src="Images/REVQR.jpeg" alt="Revolut QR code for @siddiquico" loading="lazy">
-                    <p>Scan with your phone camera or Revolut app.</p>
-                  </div>
-                </div>
-              </li>
-              <li class="step">
-                <span class="step__n">2</span>
-                <div class="step__b">
-                  <p class="step__h">Put this as the reference note</p>
-                  <p class="payment__code" id="ticketCode"></p>
-                  <button type="button" class="copy" id="copyBtn"><span class="copy__ico" aria-hidden="true">⧉</span><span id="copyTxt">Copy reference note</span></button>
-                  <p class="step__sub warn">Type it exactly. It’s how we find your payment.</p>
-                </div>
-              </li>
-              <li class="step">
-                <span class="step__n">3</span>
-                <div class="step__b">
-                  <p class="step__h">Come back here and tap the button</p>
-                </div>
-              </li>
-            </ol>
-            <button class="send paidbtn" id="paidBtn" type="button">✓ Paid!</button>
-            <p class="cashline">Want to pay with cash? <a data-wa data-cash="pay" href="https://wa.me/359882093176?text=Hi%21%20I%27d%20like%20to%20pay%20for%20my%20Cultural%20Event%20ticket%20with%20cash." target="_blank" rel="noopener">Msg us</a></p>
-          </div>
-
-          <div id="stateBox" hidden></div>
-          <button class="linkbtn" id="againBtn" type="button">Get another ticket for someone else</button>
-        </div>
-
-        <p class="card__fine">We only use your details for this event.</p>
       </div>
     </section>
 
-    <!-- ═══════════ ALREADY GOT A TICKET? ═══════════ -->
-    <section class="join check" id="ticket">
-      <div class="card rv">
-        <div class="card__head">
-          <div>
-            <h2 class="card__t">Already got a ticket?</h2>
-            <p class="card__s">ENTER YOUR EMAIL TO SEE IT</p>
-          </div>
+    <!-- ═══════════ HIGHLIGHTS ═══════════ -->
+    <section id="highlights">
+      <div class="wrap">
+        <h2 class="h rv">WHAT WE GOT UP TO</h2>
+        <div class="hl">
+          <div class="hl__c rv"><div class="hl__e">👗</div><div class="hl__t">Dressed in culture</div><div class="hl__d">Everyone came in their traditional clothes. The outfits were stunning.</div></div>
+          <div class="hl__c rv" style="--d:.05s"><div class="hl__e">🎲</div><div class="hl__t">Get-to-know-you Bingo</div><div class="hl__d">A bingo game that got people up, chatting and meeting new faces.</div></div>
+          <div class="hl__c rv" style="--d:.1s"><div class="hl__e">🍗</div><div class="hl__t">Food &amp; chai</div><div class="hl__d">Chicken tandoori, chana chaat and chai, plus desserts to finish.</div></div>
+          <div class="hl__c rv" style="--d:.15s"><div class="hl__e">🧠</div><div class="hl__t">Team trivia</div><div class="hl__d">Teams battled it out on buzzers, with music and plenty of noise.</div></div>
+          <div class="hl__c rv" style="--d:.2s"><div class="hl__e">🪑</div><div class="hl__t">Musical chairs</div><div class="hl__d">Classic fun, with lots of laughing and some very competitive moments.</div></div>
+          <div class="hl__c rv" style="--d:.25s"><div class="hl__e">🌿</div><div class="hl__t">Free henna</div><div class="hl__d">Beautiful mehndi designs for anyone who wanted them.</div></div>
+          <div class="hl__c rv" style="--d:.3s"><div class="hl__e">📸</div><div class="hl__t">Photo booth</div><div class="hl__d">A shiny gold frame for the photos of the night.</div></div>
+          <div class="hl__c rv" style="--d:.35s"><div class="hl__e">🏆</div><div class="hl__t">Best Dressed awards</div><div class="hl__d">Everyone voted for the best outfit of the night.</div></div>
         </div>
-        <form id="lookForm" novalidate>
-          <div class="f" id="lEmailW">
-            <label for="lEmail">Email you booked with</label>
-            <div class="ctl"><input id="lEmail" type="email" autocomplete="email" placeholder="you@example.com"></div>
-            <p class="err">That email doesn't look right.</p>
-          </div>
-          <button class="send" type="submit" id="lookBtn">Check my ticket</button>
-        </form>
-        <div id="lookRes" class="lookres" hidden></div>
       </div>
     </section>
 
-    <!-- ═══════════ FOOTER — sponsor block ═══════════ -->
-    <footer class="foot">
-      <div class="hoststamp" id="hoststamp">
-        <p class="hoststamp__cap">
-          <span class="hoststamp__label">SPONSORED BY</span>
-          <span class="hoststamp__name">HALAL MEAT &amp; MASALA</span>
-          <span class="hoststamp__where">STARA ZAGORA</span>
-        </p>
-        <a class="hoststamp__ring"
-           href="https://chat.whatsapp.com/CFhI8dwVadw2jHKuiwWHhX?mode=gi_t"
-           target="_blank" rel="noopener noreferrer"
-           aria-label="Join the Halal Meat and Masala WhatsApp group">
-          <img class="hoststamp__img" id="hostLogo" alt="Halal Meat &amp; Masala, Stara Zagora">
-        </a>
-        <p class="hoststamp__join">TAP LOGO TO JOIN WA GROUP</p>
+    <!-- ═══════════ HOW THE NIGHT WENT ═══════════ -->
+    <section id="night">
+      <div class="wrap">
+        <h2 class="h rv">HOW THE NIGHT WENT</h2>
+        <ol class="tl rv" style="--d:.08s">
+          <li><b>6PM: We started on time</b><span>Doors opened and everyone arrived in their best outfits.</span></li>
+          <li><b>Opening &amp; Bingo</b><span>A warm welcome from our hosts, then bingo to break the ice.</span></li>
+          <li><b>Food</b><span>Chicken tandoori, chana chaat and chai for everyone.</span></li>
+          <li><b>Trivia</b><span>Team trivia with music, with every team on its own buzzer.</span></li>
+          <li><b>Desserts &amp; Chai, Musical Chairs</b><span>Sweet treats, then a very competitive round of musical chairs.</span></li>
+          <li><b>Final scores &amp; Best Dressed awards</b><span>Scores, votes and a few proud winners.</span></li>
+          <li><b>10PM: That's a wrap!</b><span>A night to remember.</span></li>
+        </ol>
       </div>
-      <div class="contact" id="contact">
-        <h3 class="contact__t">Contact us</h3>
-        <p class="contact__s">Questions about tickets, payment or the night? Message us on WhatsApp.</p>
-        <a class="wa-btn" data-wa href="https://wa.me/359882093176" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200Zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.100-.7.300-.2.300-.9.900-.9 2.200s.9 2.500 1.100 2.700c.1.200 1.800 2.800 4.400 3.900 1.600.7 2.300.8 3.100.7.500-.1 1.500-.6 1.700-1.200.2-.6.2-1.100.2-1.200-.1-.1-.3-.2-.5-.3Z"/></svg>
-          +359 88 209 3176
-        </a>
+    </section>
+
+    <!-- ═══════════ PHOTOS ═══════════ -->
+    <section id="photos">
+      <div class="wrap">
+        <h2 class="h rv">PHOTOS FROM THE NIGHT</h2>
+        <p class="lead rv" style="--d:.08s">Tap any photo to see it bigger.</p>
+        <div class="gal" id="gal"></div>
       </div>
-      <p class="foot__a">ASIAN SOCIETY · TRAKIA UNIVERSITY</p>
-      <p class="foot__b">17 OCTOBER · 6PM – 10PM · STARA ZAGORA</p>
-      <p class="foot__c"><a href="https://maps.app.goo.gl/PGVZ2q4MvKAYjRC27" target="_blank" rel="noopener">International Youth Center, bul. “Tsar Simeon Veliki” 55 · Open in Maps</a></p>
-    </footer>
+    </section>
+
+    <!-- ═══════════ THANKS ═══════════ -->
+    <section id="thanks">
+      <div class="wrap">
+        <div class="thanks rv">
+          <img class="thanks__logo" src="Images/sponsor-logo.png" width="320" height="320" alt="Halal Meat &amp; Masala logo" loading="lazy">
+          <p class="thanks__k">OUR SPONSOR</p>
+          <p class="thanks__n">Halal Meat &amp; Masala</p>
+          <p class="thanks__d">Stara Zagora. Thank you so much for helping make the night possible.</p>
+        </div>
+        <p class="lead rv" style="--d:.1s;margin-top:26px">A huge thank you to everyone who came, to everyone who helped set up, decorate and run the night, and to everyone who made it such a special evening. 💛</p>
+      </div>
+    </section>
+
+    <!-- ═══════════ FEEDBACK ═══════════ -->
+    <section id="next">
+      <div class="wrap">
+        <div class="next rv">
+          <h2 class="h">TELL US WHAT YOU THINK</h2>
+          <p class="lead" style="margin-top:18px">Your ideas help us make the next one even better. Tap below and send us a quick message on WhatsApp.</p>
+          <div class="fb">
+            <a class="fb__c" href="https://wa.me/359882093176?text=Hi%21%20I%20came%20to%20the%20Cultural%20Event%20%F0%9F%8F%AE%0AHere%27s%20my%20feedback%3A%20" target="_blank" rel="noopener">
+              <span class="fb__e">🏮</span>
+              <span class="fb__t">I came to the event</span>
+              <span class="fb__d">What did you love? What could we do better next time?</span>
+              <span class="fb__b">Give feedback →</span>
+            </a>
+            <a class="fb__c" href="https://wa.me/359882093176?text=Hi%21%20I%20couldn%27t%20make%20the%20Cultural%20Event%2C%20but%20here%27s%20the%20kind%20of%20event%20I%27d%20love%20to%20see%20next%3A%20" target="_blank" rel="noopener">
+              <span class="fb__e">💡</span>
+              <span class="fb__t">I couldn't come</span>
+              <span class="fb__d">What kind of event would you love us to put on next?</span>
+              <span class="fb__b">Share your idea →</span>
+            </a>
+          </div>
+          <p class="lead" style="margin-top:26px;font-size:16px">Or just say hi and ask about our next event:</p>
+          <a class="wa" href="https://wa.me/359882093176" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200Zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.100-.7.300-.2.300-.9.900-.9 2.200s.9 2.500 1.100 2.700c.1.200 1.800 2.800 4.400 3.900 1.600.7 2.300.8 3.100.7.500-.1 1.500-.6 1.700-1.200.2-.6.2-1.100.2-1.200-.1-.1-.3-.2-.5-.3Z"/></svg>
+            +359 88 209 3176
+          </a>
+        </div>
+      </div>
+    </section>
+
   </main>
-  <a class="stickycta" id="stickyCta" href="#join" data-late-only hidden>🎟️ Get my ticket <span class="stickycta__p"></span></a>
-  <a class="wa-float" data-wa href="https://wa.me/359882093176" target="_blank" rel="noopener" aria-label="Questions? Message us on WhatsApp +359 88 209 3176">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200Zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.100-.7.300-.2.300-.9.900-.9 2.200s.9 2.500 1.100 2.700c.1.200 1.800 2.800 4.400 3.900 1.600.7 2.300.8 3.100.7.500-.1 1.500-.6 1.700-1.200.2-.6.2-1.100.2-1.200-.1-.1-.3-.2-.5-.3Z"/></svg>
-    <span class="wa-float__txt">Questions?</span>
-  </a>
+
+  <footer class="foot">
+    <p class="foot__a">ASIAN SOCIETY · TRAKIA UNIVERSITY</p>
+    <p class="foot__b">CULTURAL EVENT · 17 OCTOBER 2026 · STARA ZAGORA</p>
+    <p class="foot__b"><a href="https://maps.app.goo.gl/PGVZ2q4MvKAYjRC27" target="_blank" rel="noopener">International Youth Center, bul. “Tsar Simeon Veliki” 55</a></p>
+  </footer>
+</div>
+
+<!-- photo viewer -->
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb__btn lb__x" id="lbX" type="button" aria-label="Close">✕</button>
+  <button class="lb__btn lb__p" id="lbP" type="button" aria-label="Previous photo">‹</button>
+  <img class="lb__img" id="lbImg" alt="">
+  <button class="lb__btn lb__n" id="lbN" type="button" aria-label="Next photo">›</button>
+  <div class="lb__c" id="lbC"></div>
 </div>
 
 <script>
@@ -979,460 +359,98 @@ a.tag:hover{border-style:solid}
 var $=function(s){return document.querySelector(s)};
 var reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-/* Prices are decided by the server (functions/api/_shared.js); these are only used for display. */
-var PRICE={prereg:7,early:8,regular:10,late:15};
-
-/* Price phases (Bulgarian time). functions/api/_shared.js enforces the same dates.
-     early   until the end of Sun 11 Oct   €8 / €7 pre-registered
-     ten     until Thu 15 Oct, 2PM         €10, urgent "last chance" messaging
-     fifteen after that                    €15
-   Anything that doesn't belong to the current phase is removed from the page. */
-var EARLY_END=new Date('2026-10-11T23:59:59+03:00').getTime();
-var TEN_END=new Date('2026-10-15T14:00:00+03:00').getTime();
-var EVENT_START=new Date('2026-10-17T18:00:00+03:00').getTime();
-var TICKETS_CLOSED=true; /* ticket sales are closed. Set to false (and SALES_OPEN in _shared.js) to reopen */
-var PHASE=TICKETS_CLOSED?'closed':Date.now()<=EARLY_END?'early':Date.now()<=TEN_END?'ten':'fifteen';
-var LATE=PHASE!=='early';
-var KEEP={closed:['closed'],early:['early','open'],ten:['late','ten','open'],fifteen:['late','fifteen','open']}[PHASE];
-['early','late','ten','fifteen','open','closed'].forEach(function(k){
-  if(KEEP.indexOf(k)<0)document.querySelectorAll('[data-'+k+'-only]').forEach(function(el){el.remove()});
-});
-if(PHASE==='closed'){
-  /* the buying sections stay inert and hidden; nothing on the page leads to them */
-  ['#prices','#join'].forEach(function(s){var el=document.querySelector(s);if(el)el.hidden=true});
-}
-var WA_LINK='https://wa.me/359882093176';
-var MAPS_LINK='https://maps.app.goo.gl/PGVZ2q4MvKAYjRC27';
-
-/* ---------- LOGO: matches your folder setup (Images/MNMLOGO.png) ---------- */
-(function(){
-  var img=document.getElementById('hostLogo');
-  var candidates=[
-    'Images/MNMLOGO.png','images/MNMLOGO.png','IMAGES/MNMLOGO.png',
-    'Images/mnmlogo.png','Images/logo.png','images/logo.png',
-    'Images/logo.jpg','images/logo.jpg','Images/logo.webp',
-    'MNMLOGO.png','mnmlogo.png','logo.png','logo.jpg','logo.jpeg','logo.webp'
-  ];
-  var i=0;
-  img.addEventListener('error',function(){
-    i++;
-    if(i<candidates.length){
-      img.src=candidates[i];
-    }else{
-      img.closest('.hoststamp').classList.add('nologo');
-    }
-  });
-  img.src=candidates[0];
-})();
-
-/* ---------- stars in the sky ---------- */
+/* stars in the sky */
 var starBox=$('.stars');
-if(starBox){
-  for(var i=0;i<26;i++){
-    var s=document.createElement('i');
-    var tw=!reduced&&Math.random()<.55;
-    s.className='star'+(tw?' tw':'');
-    s.style.left=(Math.random()*100).toFixed(2)+'%';
-    s.style.top=(Math.random()*56).toFixed(2)+'%';
-    var sz=(1+Math.random()*1.8).toFixed(1);
-    s.style.width=s.style.height=sz+'px';
-    if(tw)s.style.animationDelay=(-Math.random()*4).toFixed(2)+'s';
-    starBox.appendChild(s);
-  }
+for(var i=0;i<34;i++){
+  var s=document.createElement('i'),tw=!reduced&&Math.random()<.55;
+  s.className='star'+(tw?' tw':'');
+  s.style.left=(Math.random()*100).toFixed(2)+'%';
+  s.style.top=(Math.random()*70).toFixed(2)+'%';
+  var sz=(1+Math.random()*1.8).toFixed(1);s.style.width=s.style.height=sz+'px';
+  if(tw)s.style.animationDelay=(-Math.random()*4).toFixed(2)+'s';
+  starBox.appendChild(s);
 }
 
-/* ---------- scroll reveals ---------- */
+/* scroll reveals */
 var io=('IntersectionObserver' in window)?new IntersectionObserver(function(es){
   es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
-},{threshold:.15}):null;
-document.querySelectorAll('.rv').forEach(function(el){
-  if(io)io.observe(el);else el.classList.add('in');
+},{threshold:.12}):null;
+document.querySelectorAll('.rv').forEach(function(el){if(io)io.observe(el);else el.classList.add('in')});
+
+/* ---------- top tabs: highlight the section you're reading ---------- */
+var tabLinks=document.querySelectorAll('.tab');
+var SECTIONS=[['event','info'],['highlights','info'],['night','info'],['photos','photos'],['thanks','contact'],['next','contact']]
+  .map(function(p){return [document.getElementById(p[0]),p[1]]});
+var ticking=false;
+function markTab(){
+  ticking=false;
+  var line=window.scrollY+110,cur=null;
+  SECTIONS.forEach(function(s){if(s[0]&&s[0].offsetTop<=line)cur=s[1]});
+  /* at the very bottom of the page, always count as the last tab */
+  if(window.innerHeight+window.scrollY>=document.documentElement.scrollHeight-4)cur='contact';
+  tabLinks.forEach(function(a){a.classList.toggle('on',a.dataset.sec===cur)});
+}
+window.addEventListener('scroll',function(){if(!ticking){ticking=true;setTimeout(markTab,60)}},{passive:true});
+window.addEventListener('resize',markTab);
+window.addEventListener('scrollend',markTab);
+setInterval(function(){if(!document.hidden)markTab()},300); /* safety net: the highlight can never get stuck */
+markTab();
+
+/* ---------- photo gallery ---------- */
+/* [file name inside the Images folder, width, height]. Order is chosen so the grid mixes portrait and landscape nicely.
+   To add a photo later: put it in the Images folder and add a line here. */
+var PHOTOS=[
+  ['team-photo.jpg',2048,1152],['eventphotos (1).jpeg',1536,2048],['eventphotos (4).jpeg',2048,1536],['eventphotos (3).jpeg',1536,2048],['eventphoto (1).jpg',1600,900],
+  ['eventphotos (2).jpeg',1536,2048],['eventphotos (7).jpeg',1280,960],['eventphotos (6).jpeg',960,1280],['eventphoto (2).jpg',1600,900],
+  ['eventphotos (5).jpeg',1536,2048],['eventphotos (9).jpeg',960,1280],['eventphotos (12).jpeg',1280,960],['eventphotos (8).jpeg',960,1280],
+  ['eventphotos (20).jpeg',1152,2048],['eventphoto (3).jpg',1600,900],['eventphotos (11).jpeg',960,1280],['eventphotos (10).jpeg',1280,960],
+  ['eventphotos (15).jpeg',1064,1600],['eventphotos (21).jpeg',1152,2048],['eventphotos (16).jpeg',1280,960],['eventphoto (4).jpg',1600,900],
+  ['eventphotos (17).jpeg',1536,2048],['eventphotos (13).jpeg',960,1280],['eventphotos (23).jpeg',1152,2048],['eventphotos (14).jpeg',960,1280],
+  ['eventphotos (18).jpeg',1536,2048],['eventphotos (22).jpeg',1536,2048]
+];
+function src(p){return 'Images/'+encodeURIComponent(p[0])}
+var gal=$('#gal');
+PHOTOS.forEach(function(p,idx){
+  var b=document.createElement('button');
+  b.className='gal__b';b.type='button';b.setAttribute('aria-label','Open photo '+(idx+1));
+  var im=document.createElement('img');
+  im.src=src(p);im.width=p[1];im.height=p[2];im.loading='lazy';im.decoding='async';
+  im.alt='Photo '+(idx+1)+' from the Cultural Event';
+  b.appendChild(im);
+  b.addEventListener('click',function(){openLb(idx)});
+  gal.appendChild(b);
 });
 
-/* ---------- little star particles ---------- */
-function sparks(x,y,n,colors){
-  if(reduced||!document.body.animate)return;
-  /* each star gets its own scope, otherwise only the last one is removed
-     when the animation ends and the rest are left stuck on the page */
-  for(var i=0;i<n;i++)(function(i){
-    var p=document.createElement('i');
-    p.className='spark';
-    var sz=6+Math.random()*9;
-    p.style.width=sz+'px';p.style.height=sz+'px';
-    p.style.left=x+'px';p.style.top=y+'px';
-    p.style.background=colors[i%colors.length];
-    document.body.appendChild(p);
-    var ang=Math.random()*Math.PI*2,d=26+Math.random()*46;
-    var dx=Math.cos(ang)*d,dy=Math.sin(ang)*d*.7-30;
-    var a=p.animate([
-      {transform:'translate(-50%,-50%) scale(.3) rotate(0deg)',opacity:1},
-      {transform:'translate(calc(-50% + '+dx+'px),calc(-50% + '+dy+'px)) scale(1) rotate('+(Math.random()*180-90)+'deg)',opacity:0}
-    ],{duration:650+Math.random()*550,easing:'cubic-bezier(.2,.7,.3,1)',fill:'forwards'});
-    a.onfinish=a.oncancel=function(){p.remove()};
-  })(i);
+/* ---------- lightbox ---------- */
+var lb=$('#lb'),lbImg=$('#lbImg'),cur=0,lastFocus=null;
+function show(i){
+  cur=(i+PHOTOS.length)%PHOTOS.length;
+  lbImg.src=src(PHOTOS[cur]);
+  lbImg.alt='Photo '+(cur+1)+' from the Cultural Event';
+  $('#lbC').textContent=(cur+1)+' / '+PHOTOS.length;
+  /* warm up the neighbours so swiping feels instant */
+  [cur+1,cur-1].forEach(function(j){var k=(j+PHOTOS.length)%PHOTOS.length;(new Image()).src=src(PHOTOS[k])});
 }
-
-/* ---------- perks: tap = bounce + star pop ---------- */
-document.querySelectorAll('.perk').forEach(function(p){
-  var t;
-  p.addEventListener('pointerdown',function(){
-    p.classList.add('tapped');
-    clearTimeout(t);
-    t=setTimeout(function(){p.classList.remove('tapped')},480);
-  });
-  p.addEventListener('click',function(){
-    var r=p.querySelector('.perk__orb').getBoundingClientRect();
-    sparks(r.left+r.width/2,r.top+r.height/2,5,['#ffd27a','#e8a34b','#f6f1e7']);
-  });
+function openLb(i){lastFocus=document.activeElement;lb.hidden=false;document.body.style.overflow='hidden';show(i);$('#lbX').focus()}
+function closeLb(){lb.hidden=true;document.body.style.overflow='';lbImg.removeAttribute('src');if(lastFocus&&lastFocus.focus)lastFocus.focus()}
+$('#lbX').addEventListener('click',closeLb);
+$('#lbP').addEventListener('click',function(){show(cur-1)});
+$('#lbN').addEventListener('click',function(){show(cur+1)});
+lb.addEventListener('click',function(e){if(e.target===lb)closeLb()});
+document.addEventListener('keydown',function(e){
+  if(lb.hidden)return;
+  if(e.key==='Escape')closeLb();
+  else if(e.key==='ArrowLeft')show(cur-1);
+  else if(e.key==='ArrowRight')show(cur+1);
 });
-
-/* ---------- sponsor stamp: stamps in on scroll; logo opens WhatsApp ---------- */
-var hs=document.getElementById('hoststamp');
-if(hs){
-  if(io)io.observe(hs);else hs.classList.add('in');
-  var hsImg=hs.querySelector('.hoststamp__img');
-  var hsRing=hs.querySelector('.hoststamp__ring');
-  if(hsRing)hsRing.addEventListener('click',function(){
-    if(!hsImg)return;
-    var r=hsImg.getBoundingClientRect();
-    sparks(r.left+r.width/2,r.top+r.height/2,7,['#ffd27a','#e8a34b','#f6f1e7']);
-    if(reduced||!hsImg.animate)return;
-    hsImg.animate([
-      {transform:'rotate(-8deg) scale(1)'},
-      {transform:'rotate(-3deg) scale(1.15)'},
-      {transform:'rotate(-9deg) scale(.96)'},
-      {transform:'rotate(-8deg) scale(1)'}
-    ],{duration:540,easing:'cubic-bezier(.3,1.6,.4,1)'});
-  });
-}
-
-/* ---------- countdowns: price deadline + days until the event ---------- */
-(function(){
-  var END=PHASE==='early'?EARLY_END:PHASE==='ten'?TEN_END:0;
-  function tick(){
-    var now=Date.now();
-    /* when a price deadline passes while the page is open, reload to show the new price */
-    if(END&&now>END){location.reload();return}
-    var txt='';
-    if(END){
-      var ms=END-now,d=Math.floor(ms/864e5),h=Math.floor(ms%864e5/36e5),m=Math.floor(ms%36e5/6e4),s=Math.floor(ms%6e4/1e3);
-      txt=(d>=1?d+'d ':'')+(d>=1||h>=1?h+'h ':'')+m+'m '+s+'s left';
-    }
-    document.querySelectorAll('.cd').forEach(function(el){el.textContent=txt});
-
-    var ev=EVENT_START-now,evTxt='';
-    if(ev>0){
-      var ed=Math.floor(ev/864e5),eh=Math.floor(ev%864e5/36e5);
-      evTxt=ed>=2?'🔥 Only '+ed+' days to go!':ed===1?'🔥 Only 1 day to go!':eh>=1?'🔥 The event starts in '+eh+' hours!':'🔥 The event starts very soon!';
-    }
-    document.querySelectorAll('.ev').forEach(function(el){el.textContent=evTxt});
-  }
-  tick();setInterval(tick,1e3);
-})();
-
-/* ---------- sticky "Get my ticket" button: shows while scrolling, hides at the form ---------- */
-(function(){
-  var btn=$('#stickyCta'),join=$('#join'),top=$('#top');
-  if(!btn)return;
-  var p=btn.querySelector('.stickycta__p');
-  if(p)p.textContent=PHASE==='ten'?'· €10 till Thu 2PM':'· €'+PRICE.late;
-  function check(){
-    var y=window.scrollY||0,vh=window.innerHeight;
-    var jr=join?join.getBoundingClientRect():null;
-    var heroH=top?top.offsetHeight:600;
-    var atForm=jr&&jr.top<vh*0.85&&jr.bottom>vh*0.1;
-    btn.hidden=!(y>heroH*0.7)||atForm;
-  }
-  window.addEventListener('scroll',check,{passive:true});
-  window.addEventListener('resize',check);
-  check();
-})();
-
-/* ---------- helpers ---------- */
-function esc(v){return String(v==null?'':v).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
-function rememberEmail(e){try{localStorage.setItem('asoc_email',e)}catch(x){}}
-function api(path,body){
-  return fetch(path,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)})
-    .then(function(r){return r.json().catch(function(){return {}}).then(function(d){return {ok:r.ok,status:r.status,data:d}})});
-}
-
-/* ---------- WhatsApp button: icon only; hover / tap opens the label ---------- */
-var waFloat=$('.wa-float');
-if(waFloat){
-  waFloat.addEventListener('click',function(e){
-    if(matchMedia('(hover: none)').matches&&!waFloat.classList.contains('open')){
-      e.preventDefault();
-      waFloat.classList.add('open');
-      setTimeout(function(){waFloat.classList.remove('open')},3500);
-    }
-  });
-}
-
-/* ---------- the ticket views (waiting / confirmed / used) ---------- */
-function ticketHTML(d,withAgain){
-  var name=esc(d.name),code=esc(d.code);
-  var note=d.note?'<div class="pass__note"><b>Message from the organisers</b>'+esc(d.note)+'</div>':'';
-  var where='<p class="pass__where">Saturday 17 October, 6PM – 10PM · <a href="'+MAPS_LINK+'" target="_blank" rel="noopener">International Youth Center, bul. “Tsar Simeon Veliki” 55</a></p>';
-  var help='<p class="pass__where">Questions? <a data-wa href="'+WA_LINK+'" target="_blank" rel="noopener">Message us on WhatsApp</a></p>';
-  var again=withAgain?'<button class="linkbtn" type="button" data-again>Get another ticket for someone else</button>':'';
-  if(d.used){
-    return '<div class="pass used"><span class="pass__stamp">CHECKED IN</span><p class="pass__big">This ticket has been used</p>'
-      +'<p class="pass__name">'+name+'</p><p class="pass__ref">Reference</p><p class="pass__code">'+code+'</p>'
-      +'<p class="pass__msg">You were scanned in at the door. Enjoy the night!</p>'
-      +'<a class="send" href="/vote" style="text-decoration:none">🏆 Vote for Best Dressed</a>'+note+help+'</div>';
-  }
-  if(d.status==='paid'||d.status==='emailed'){
-    var team=d.tier==='team';
-    return '<div class="pass ok"><span class="pass__stamp">'+(team?'✓ TEAM MEMBER':'✓ PAID')+'</span><p class="pass__big">'+(team?'YOU’RE ON THE TEAM! SEE YOU THERE!':'PAID! SEE YOU THERE!')+'</p>'
-      +'<p class="pass__name">'+name+'</p><p class="pass__ref">Your reference</p><p class="pass__code">'+code+'</p>'
-      +'<p class="pass__msg">Can’t wait to see you all dressed up in your cultural clothes! Show this page at the door.</p>'
-      +where+note+again+'</div>';
-  }
-  var amount=d.price||(d.tier==='prereg'?PRICE.prereg:PRICE.early);
-  if(d.cash){
-    return '<div class="pass wait"><span class="pass__stamp">💵 CASH TICKET</span><p class="pass__big">Your seat is reserved!</p>'
-      +'<p class="pass__name">'+name+'</p><p class="pass__ref">Your reference</p><p class="pass__code">'+code+'</p>'
-      +'<p class="pass__msg">Your ticket will be confirmed as soon as we receive your cash. Message us on WhatsApp to sort out handing it over.</p>'
-      +where+note+help+again+'</div>';
-  }
-  var payBox='<div class="paycheck"><p class="paycheck__h">Haven’t sent the payment yet?</p>'
-    +'<p class="paycheck__t">Send <b>€'+amount+'</b> to <a class="tag" href="https://revolut.me/siddiquico" target="_blank" rel="noopener">@siddiquico</a> and put <b>'+code+'</b> as the reference note.</p>'
-    +'<a class="revopen" href="https://revolut.me/siddiquico" target="_blank" rel="noopener">Open in Revolut</a></div>';
-  return '<div class="pass wait"><span class="pass__stamp">BEING ISSUED</span><p class="pass__big">Not much longer now!</p>'
-    +'<p class="pass__name">'+name+'</p><p class="pass__ref">Your reference</p><p class="pass__code">'+code+'</p>'
-    +'<p class="pass__msg">Sorry for the wait. We check every payment by hand, so it can take a little while. Your ticket is being issued soon and we’ll email you to come back here once it’s confirmed. You can also check any time yourself with <b>“Already got a ticket?”</b> and your email.</p>'
-    +payBox+note+help+again+'</div>';
-}
-
-/* ---------- the form ---------- */
-var form=$('#reg'),done=$('#done'),send=$('#sendBtn'),card=$('#card'),formTop=$('#formTop');
-var EMAIL_RE=/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-var current=null,preMode=false;
-
-document.querySelectorAll('input[name="vegan"]').forEach(function(r){
-  r.addEventListener('change',function(){$('#fVeganW').classList.remove('bad')});
-});
-['fEmail','fName'].forEach(function(id){
-  document.getElementById(id).addEventListener('input',function(){
-    this.closest('.f').classList.remove('bad');
-    if($('#pregFail'))$('#pregFail').hidden=true;
-  });
-});
-
-function updatePriceLine(){
-  var pl=$('#priceLine');
-  if(LATE){
-    pl.classList.remove('pre');
-    $('#plNow').textContent='€'+(PHASE==='ten'?PRICE.regular:PRICE.late);
-    $('#plLabel').textContent=PHASE==='ten'?'Discount price · ONLY €10':'Ticket';
-    if($('#plOld'))$('#plOld').remove();
-    $('#plSub').textContent=PHASE==='ten'?'Goes up to €15 on Thursday at 2PM. Limited spots.':'The event is this Saturday. Limited spots.';
-    return;
-  }
-  pl.classList.toggle('pre',preMode);
-  $('#plNow').textContent='€'+(preMode?PRICE.prereg:PRICE.early);
-  $('#plLabel').textContent=preMode?'First release · 30% OFF':'Early bird · 20% OFF';
-  $('#tierEarly').classList.toggle('now',!preMode);
-  $('#tierFirst').classList.toggle('now',preMode);
-  $('#tierEarly .tier__tag').hidden=preMode;
-  $('#tierFirst .tier__tag').hidden=!preMode;
-  $('#earlyGo').hidden=!preMode;
-  $('#tierFirst .tier__go').hidden=preMode;
-  $('#plOld').textContent='€10';
-  $('#plSub').textContent=preMode?'For pre-registered people. We check your email when you tap Pay.':'Extended for the weekend! Ends 11th October. Limited spots.';
-  $('#pregBtn').setAttribute('aria-pressed',preMode?'true':'false');
-  $('#pregBtn').innerHTML=preMode?'Pre-registered: <u>30% off</u> applied. Tap to switch back':'Already pre-registered? <u>Click here</u> for 30% off (€7)';
-  $('#pregNote').hidden=!preMode;
-}
-function setPre(on){
-  if(LATE){preMode=false;return}
-  preMode=on;$('#pregFail').hidden=true;updatePriceLine();
-}
-if(!LATE){
-  $('#pregBtn').addEventListener('click',function(){setPre(!preMode)});
-  $('#pregSkip').addEventListener('click',function(){setPre(false);form.requestSubmit?form.requestSubmit():send.click()});
-}
-updatePriceLine();
-document.querySelectorAll('[data-early]').forEach(function(a){
-  a.addEventListener('click',function(){if(!form.hidden)setPre(false)});
-});
-document.querySelectorAll('[data-prereg]').forEach(function(a){
-  a.addEventListener('click',function(){
-    if(!form.hidden)setPre(true);
-    setTimeout(function(){var f=$('#fEmail');if(f&&!form.hidden)f.focus({preventScroll:true})},700);
-  });
-});
-
-/* reads + validates the form; returns the entry, or null (and shows what's wrong) */
-function readForm(){
-  var email=$('#fEmail').value.trim();
-  var name=$('#fName').value.trim();
-  var year=$('#fYear').value;
-  var background=$('#fBackground').value.trim();
-  var digits=$('#fPhone').value.replace(/\D/g,'').replace(/^0+/,'');
-  var phone=digits?($('#fCC').value+' '+digits):'';
-
-  var veganEl=document.querySelector('input[name="vegan"]:checked');
-  var vegan=veganEl?veganEl.value:'';
-
-  var bad=null;
-  if(!EMAIL_RE.test(email)){$('#fEmailW').classList.add('bad');bad=bad||$('#fEmail');}
-  if(name.length<2){$('#fNameW').classList.add('bad');bad=bad||$('#fName');}
-  if(!vegan){$('#fVeganW').classList.add('bad');bad=bad||document.querySelector('input[name="vegan"]');}
-  if(bad){bad.focus();return null}
-  return {email:email,name:name,year:year,background:background,phone:phone,vegan:vegan,prereg:preMode};
-}
-
-/* creates the (hidden, unpaid) ticket, then hands the result to onDone */
-function register(entry,onDone){
-  send.classList.add('busy');
-  api('/api/register',entry).then(function(res){
-    send.classList.remove('busy');
-    if(res.status===404&&res.data.error==='not_prereg'){$('#pregFail').hidden=false;return}
-    if(!res.ok){alert((res.data.error||'Could not create your ticket.')+' Please try again.');return}
-    var d=res.data;d.email=entry.email;d.name=d.name||entry.name;
-    onDone(d);
-  }).catch(function(){send.classList.remove('busy');alert('Could not reach the server. Please try again.')});
-}
-
-form.addEventListener('submit',function(e){
-  e.preventDefault();
-  var entry=readForm();
-  if(entry)register(entry,present);
-});
-
-/* ---------- pay with cash: opens WhatsApp AND sends a cash request to the organiser ---------- */
-function cashRequest(d){
-  api('/api/cash',{code:d.code,email:d.email}).then(function(res){
-    if(res.ok&&res.data.cash){d.status='pending';d.cash=true}
-    present(d);
-  }).catch(function(){present(d)});
-}
-document.addEventListener('click',function(e){
-  var a=e.target.closest('[data-cash]');
-  if(!a)return;
-  e.preventDefault();
-  if(a.dataset.cash==='form'){
-    var entry=readForm();
-    if(!entry)return; /* fill in your details first so the seat can be reserved */
-    window.open(a.href,'_blank','noopener');
-    register(entry,function(d){
-      if(d.status==='draft'||d.status==='pending')cashRequest(d);else present(d);
-    });
-  }else if(current){
-    window.open(a.href,'_blank','noopener');
-    cashRequest(current);
-  }
-});
-
-function present(d){
-  current=d;rememberEmail(d.email);
-  formTop.hidden=true;form.hidden=true;done.hidden=false;
-  $('#dExisting').hidden=!d.existing;
-  if(d.status==='draft'){
-    $('#dName').textContent=d.name;
-    $('#ticketPrice').textContent='€'+d.price;
-    var tn=$('#tierNote');
-    if(d.tier==='prereg'){tn.textContent='Pre-registered: 30% off the normal €10';tn.className='step__sub tiernote';tn.hidden=false}
-    else if(d.tier==='early'){tn.textContent='Early bird: 20% off the normal €10';tn.className='step__sub';tn.hidden=false}
-    else if(d.tier==='teamdisc'){tn.textContent='Team member price';tn.className='step__sub tiernote';tn.hidden=false}
-    else if(d.tier==='referral'){tn.textContent='Referral price';tn.className='step__sub tiernote';tn.hidden=false}
-    else{tn.hidden=true}
-    $('#ticketCode').textContent=d.code;
-    resetCopy();
-    $('#payStep').hidden=false;$('#stateBox').hidden=true;
-  }else{
-    $('#payStep').hidden=true;
-    var sb=$('#stateBox');sb.innerHTML=ticketHTML(d);sb.hidden=false;
-  }
-  var r=card.getBoundingClientRect();
-  sparks(r.left+r.width/2,Math.max(60,r.top+46),22,['#ffd27a','#e8a34b','#f6f1e7','#e0532f']);
-  card.scrollIntoView({behavior:reduced?'auto':'smooth',block:'start'});
-}
-
-/* ---------- pay step: QR, copy, Paid! ---------- */
-$('#qrBtn').addEventListener('click',function(){
-  var box=$('#qrBox'),open=box.hidden;
-  box.hidden=!open;this.textContent=open?'Hide QR code':'Show QR code';
-  this.setAttribute('aria-expanded',open?'true':'false');
-});
-
-var copyTimer;
-function resetCopy(){
-  clearTimeout(copyTimer);
-  $('#copyBtn').classList.remove('copied');
-  $('#copyTxt').textContent='Copy reference note';
-  $('.copy__ico').textContent='⧉';
-}
-$('#copyBtn').addEventListener('click',function(){
-  var btn=this,code=current&&current.code;
-  if(!code)return;
-  var ok=function(){
-    clearTimeout(copyTimer);
-    btn.classList.remove('copied');void btn.offsetWidth;btn.classList.add('copied'); /* restarts the bounce on every press */
-    $('#copyTxt').textContent='Copied!';$('.copy__ico').textContent='✓';
-    var r=btn.getBoundingClientRect();
-    sparks(r.left+24,r.top+r.height/2,4,['#7fd8a2','#ffd27a','#f6f1e7']);
-    copyTimer=setTimeout(resetCopy,2500);
-  };
-  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(code).then(ok,function(){})}
-  else{var ta=document.createElement('textarea');ta.value=code;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');ok()}catch(x){}ta.remove()}
-});
-
-$('#paidBtn').addEventListener('click',function(){
-  var btn=this;if(!current)return;
-  btn.disabled=true;
-  api('/api/claim',{code:current.code,email:current.email}).then(function(res){
-    btn.disabled=false;
-    if(!res.ok){alert((res.data.error||'Could not save that.')+' Please try again, or message us on WhatsApp.');return}
-    current.status=res.data.status||'pending';
-    present(current);
-  }).catch(function(){btn.disabled=false;alert('Could not reach the server. Please try again.')});
-});
-
-/* ---------- start over / another ticket ---------- */
-function startOver(){
-  done.hidden=true;form.hidden=false;formTop.hidden=false;form.reset();setPre(false);
-  document.querySelectorAll('.f.bad').forEach(function(f){f.classList.remove('bad')});
-  current=null;
-  card.scrollIntoView({behavior:reduced?'auto':'smooth',block:'start'});
-  setTimeout(function(){$('#fEmail').focus({preventScroll:true})},500);
-}
-$('#againBtn').addEventListener('click',startOver);
-document.addEventListener('click',function(e){if(e.target.closest('[data-again]'))startOver()});
-
-/* ---------- "Already got a ticket?" ---------- */
-var lookForm=$('#lookForm'),lookRes=$('#lookRes');
-try{var saved=localStorage.getItem('asoc_email');if(saved)$('#lEmail').value=saved}catch(x){}
-$('#lEmail').addEventListener('input',function(){this.closest('.f').classList.remove('bad')});
-lookForm.addEventListener('submit',function(e){
-  e.preventDefault();
-  var email=$('#lEmail').value.trim();
-  if(!EMAIL_RE.test(email)){$('#lEmailW').classList.add('bad');$('#lEmail').focus();return}
-  var btn=$('#lookBtn');btn.classList.add('busy');
-  api('/api/lookup',{email:email}).then(function(res){
-    btn.classList.remove('busy');
-    lookRes.hidden=false;
-    if(!res.ok){lookRes.innerHTML='<div class="none">'+esc(res.data.error||'Something went wrong. Please try again.')+'</div>';return}
-    var d=res.data;
-    if(!d.found){
-      lookRes.innerHTML='<div class="none">We couldn’t find a ticket for that email. Check for typos, or <a href="#join">get your ticket now</a>. Need help? <a data-wa href="'+WA_LINK+'" target="_blank" rel="noopener">Message us on WhatsApp</a>.</div>';
-      return;
-    }
-    d.email=email;rememberEmail(email);
-    if(d.status==='draft'&&PHASE==='closed'){
-      lookRes.innerHTML='<div class="pass wait"><p class="pass__big">Ticket sales are closed</p><p class="pass__msg">Hi '+esc(d.name)+', your ticket was never confirmed and online sales have now closed. If you have already paid, message us on WhatsApp with your reference <b>'+esc(d.code)+'</b> and we will sort it out.</p><a class="send" data-wa href="'+WA_LINK+'" target="_blank" rel="noopener" style="text-decoration:none">Message us on WhatsApp</a></div>';
-      return;
-    }
-    if(d.status==='draft'){
-      lookRes.innerHTML='<div class="pass wait"><p class="pass__big">Almost there, '+esc(d.name)+'!</p><p class="pass__msg">You’ve reserved a ticket but haven’t confirmed your payment yet.</p><button class="send" type="button" id="contPay">Continue to payment</button></div>';
-      $('#contPay').addEventListener('click',function(){present(d)});
-      return;
-    }
-    lookRes.innerHTML=ticketHTML(d,true);
-    lookRes.scrollIntoView({behavior:reduced?'auto':'smooth',block:'nearest'});
-  }).catch(function(){btn.classList.remove('busy');lookRes.hidden=false;lookRes.innerHTML='<div class="none">Could not reach the server. Please try again.</div>'});
-});
+/* swipe on phones */
+var x0=null;
+lb.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+lb.addEventListener('touchend',function(e){
+  if(x0===null)return;
+  var dx=e.changedTouches[0].clientX-x0;x0=null;
+  if(Math.abs(dx)>50)show(cur+(dx<0?1:-1));
+},{passive:true});
 })();
 </script>
 </body>
