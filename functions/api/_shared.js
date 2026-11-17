@@ -76,7 +76,7 @@ export async function triviaSnapshot(db) {
 export function code() {
   const alphabet = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
   const bytes = crypto.getRandomValues(new Uint8Array(4));
-  return "ASOC-" + [...bytes].map(byte => alphabet[byte % alphabet.length]).join("");
+  return "CSZ-" + [...bytes].map(byte => alphabet[byte % alphabet.length]).join("");
 }
 
 export async function isAdmin(request, env) {

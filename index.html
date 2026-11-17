@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script>if (location.hostname.endsWith('github.io')) location.replace('https://asiansociety.pages.dev' + location.pathname.replace(/^\/AsianSociety/, '') + location.search + location.hash);</script>
+<script>if (location.hostname.endsWith('github.io')) location.replace('https://culturalsocietysz.pages.dev' + location.pathname.replace(/^\/AsianSociety/, '') + location.search + location.hash);</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#141234">
-<title>Cultural Event 2026 · What a night! · Asian Society, Trakia University</title>
-<meta name="description" content="Photos and highlights from the Asian Society × Trakia University Cultural Event: Saturday 17 October 2026, International Youth Center, Stara Zagora. Dressed in culture, bingo, trivia, food, henna and more.">
+<title>Cultural Society SZ · Our first event: Cultural Event 2026 · Stara Zagora</title>
+<meta name="description" content="Cultural Society SZ celebrates culture in Stara Zagora. See the photos and highlights from our first event, the Cultural Event on Saturday 17 October 2026 at the International Youth Center. Follow us on Instagram @culturalsocietysz.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://asiansociety.pages.dev/">
-<meta property="og:title" content="Cultural Event · What a night! 🏮">
-<meta property="og:description" content="See the photos from our Cultural Event: Saturday 17 October, International Youth Center, Stara Zagora.">
-<meta property="og:image" content="https://asiansociety.pages.dev/Images/linkpreview-recap2.jpg">
+<meta property="og:site_name" content="Cultural Society SZ">
+<meta property="og:url" content="https://culturalsocietysz.pages.dev/">
+<meta property="og:title" content="Cultural Society SZ · Our first event: what a night! 🏮">
+<meta property="og:description" content="See the photos from our first Cultural Event in Stara Zagora, and follow @culturalsocietysz on Instagram for what's next.">
+<meta property="og:image" content="https://culturalsocietysz.pages.dev/Images/linkpreview-logo.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Everyone dressed in their cultural clothes at the Cultural Event, 17 October.">
+<meta property="og:image:alt" content="Cultural Society SZ logo.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://asiansociety.pages.dev/Images/linkpreview-recap2.jpg">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8F%AE%3C/text%3E%3C/svg%3E">
+<meta name="twitter:image" content="https://culturalsocietysz.pages.dev/Images/linkpreview-logo.jpg">
+<link rel="icon" type="image/jpeg" href="Images/LOGO.jpeg">
+<link rel="apple-touch-icon" href="Images/LOGO.jpeg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
@@ -41,13 +43,23 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 /* ═══════════ TOP TABS (stay at the top while scrolling) ═══════════ */
 .tabs{position:sticky;top:0;z-index:60;background:rgba(20,18,52,.9);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid rgba(216,162,74,.28)}
 .tabs__in{max-width:1100px;margin:0 auto;padding:9px 14px;display:flex;align-items:center;justify-content:center;gap:8px}
-.tabs__brand{display:none;margin-right:auto;font:800 11px 'Karla';letter-spacing:.22em;color:var(--gold-soft)}
-@media(min-width:760px){.tabs__brand{display:block}.tabs__in{justify-content:flex-end}}
+.tabs__brand{display:none;align-items:center;gap:10px;margin-right:auto;font:800 11px 'Karla';letter-spacing:.22em;color:var(--gold-soft)}
+.tabs__logo{width:30px;height:30px;border-radius:8px;object-fit:cover;background:#fcf6f3}
+@media(min-width:760px){.tabs__brand{display:flex}.tabs__in{justify-content:flex-end}}
 .tab{padding:10px 20px;border-radius:999px;border:1px solid rgba(216,162,74,.4);color:var(--cream);text-decoration:none;font:800 13px 'Karla';letter-spacing:.14em;text-transform:uppercase;
   transition:border-color .25s,transform .2s}
 .tab:hover{background:rgba(216,162,74,.16);border-color:var(--gold-hi)}
 .tab:active{transform:scale(.96)}
 .tab.on{background:linear-gradient(180deg,#ffd98c,#e0a24c);border-color:transparent;color:#2a1d0a}
+@media(max-width:480px){.tabs__in{gap:5px;padding:8px 6px}.tab{padding:9px 11px;font-size:11px;letter-spacing:.06em}}
+.tab--ig{background:linear-gradient(45deg,#f09433,#dc2743 55%,#bc1888);border-color:transparent;color:#fff}
+.tab--ig:hover{background:linear-gradient(45deg,#f09433,#dc2743 55%,#bc1888);filter:brightness(1.1)}
+.igbtn{display:inline-flex;align-items:center;gap:10px;margin-top:22px;padding:13px 24px;border-radius:999px;color:#fff;text-decoration:none;
+  background:linear-gradient(45deg,#f09433,#dc2743 55%,#bc1888);font:800 15px 'Karla';letter-spacing:.04em;
+  box-shadow:0 10px 26px rgba(220,39,67,.35);transition:transform .3s cubic-bezier(.2,1.6,.4,1)}
+.igbtn:hover{transform:scale(1.04)}
+.igbtn svg{width:22px;height:22px}
+.igbtn--big{margin-top:22px;padding:16px 30px;font-size:18px}
 section{scroll-margin-top:64px}
 .wrap{width:100%;max-width:1100px;margin:0 auto;padding:0 20px}
 
@@ -171,7 +183,7 @@ section{padding:56px 0 8px}
   html{scroll-behavior:auto}
   .up,.lantern,.star.tw{animation:none!important}
   .rv{opacity:1!important;transform:none!important;transition:none!important}
-  .gal__b,.gal__b img,.wa{transition:none!important}
+  .gal__b,.gal__b img,.wa,.igbtn{transition:none!important}
 }
 </style>
 </head>
@@ -201,10 +213,11 @@ section{padding:56px 0 8px}
   <!-- ═══════════ TABS ═══════════ -->
   <nav class="tabs" aria-label="Page sections">
     <div class="tabs__in">
-      <span class="tabs__brand">ASIAN SOCIETY · CULTURAL EVENT</span>
+      <span class="tabs__brand"><img class="tabs__logo" src="Images/LOGO.jpeg" alt="" width="30" height="30">CULTURAL SOCIETY SZ</span>
       <a class="tab" href="#event" data-sec="info">Info</a>
       <a class="tab" href="#photos" data-sec="photos">Photos</a>
       <a class="tab" href="#next" data-sec="contact">Contact</a>
+      <a class="tab tab--ig" href="https://www.instagram.com/culturalsocietysz/" target="_blank" rel="noopener" aria-label="Follow Cultural Society SZ on Instagram">Instagram</a>
     </div>
   </nav>
 
@@ -221,7 +234,7 @@ section{padding:56px 0 8px}
     <div class="hang hang--d"><svg class="lantern" style="--sw:5.2s;--swd:-.6s;color:#ef6136" viewBox="0 0 70 130" aria-hidden="true"><use href="#lantern"/></svg></div>
 
     <div class="wrap hero__in">
-      <p class="kicker up" style="--d:.2s">ASIAN SOCIETY × TRAKIA UNIVERSITY</p>
+      <p class="kicker up" style="--d:.2s">CULTURAL SOCIETY SZ · OUR FIRST EVENT</p>
       <h1 class="title">
         <span class="t1 up" style="--d:.35s">CULTURAL EVENT</span>
         <span class="t2 up" style="--d:.5s">WHAT A NIGHT!</span>
@@ -232,6 +245,10 @@ section{padding:56px 0 8px}
         <span class="chip">6PM – 10PM</span>
         <a class="chip" href="https://maps.app.goo.gl/PGVZ2q4MvKAYjRC27" target="_blank" rel="noopener">📍 International Youth Center</a>
       </div>
+      <a class="igbtn up" style="--d:1s" href="https://www.instagram.com/culturalsocietysz/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        Follow @culturalsocietysz
+      </a>
     </div>
   </header>
 
@@ -241,12 +258,12 @@ section{padding:56px 0 8px}
     <section id="event">
       <div class="wrap">
         <h2 class="h rv">THE EVENT</h2>
-        <p class="lead rv" style="--d:.08s">On <b>Saturday 17 October</b>, Asian Society and Trakia University filled the International Youth Center in Stara Zagora with colour, culture and good company. Students from all kinds of backgrounds came <b>dressed in their cultural clothes</b> to play games, eat together, get henna done and celebrate side by side.</p>
+        <p class="lead rv" style="--d:.08s">Our first event, the <b>Cultural Event</b>, took place on <b>Saturday 17 October</b> and filled the International Youth Center in Stara Zagora with colour, culture and good company. It was created and organised by our founder, and it is where <b>Cultural Society SZ</b> began. Students from all kinds of backgrounds came <b>dressed in their cultural clothes</b> to play games, eat together, get henna done and celebrate side by side.</p>
 
         <div class="facts rv" style="--d:.12s">
           <div class="fact"><div class="fact__i">📅</div><div class="fact__k">When</div><div class="fact__v">Saturday 17 October 2026<small>6PM to 10PM</small></div></div>
           <div class="fact"><div class="fact__i">📍</div><div class="fact__k">Where</div><div class="fact__v">International Youth Center<small>bul. “Tsar Simeon Veliki” 55, 6000 Stara Zagora</small><small><a href="https://maps.app.goo.gl/PGVZ2q4MvKAYjRC27" target="_blank" rel="noopener">Open in Maps →</a></small></div></div>
-          <div class="fact"><div class="fact__i">🤝</div><div class="fact__k">Hosted by</div><div class="fact__v">Asian Society<small>at Trakia University</small></div></div>
+          <div class="fact"><div class="fact__i">🤝</div><div class="fact__k">Organised by</div><div class="fact__v">Cultural Society SZ<small>our founder, with a great team of helpers</small><small><a href="https://www.instagram.com/culturalsocietysz/" target="_blank" rel="noopener">@culturalsocietysz →</a></small></div></div>
         </div>
       </div>
     </section>
@@ -298,7 +315,7 @@ section{padding:56px 0 8px}
       <div class="wrap">
         <div class="thanks rv">
           <img class="thanks__logo" src="Images/sponsor-logo.png" width="320" height="320" alt="Halal Meat &amp; Masala logo" loading="lazy">
-          <p class="thanks__k">OUR SPONSOR</p>
+          <p class="thanks__k">SPONSOR OF OUR FIRST EVENT</p>
           <p class="thanks__n">Halal Meat &amp; Masala</p>
           <p class="thanks__d">Stara Zagora. Thank you so much for helping make the night possible.</p>
         </div>
@@ -310,7 +327,13 @@ section{padding:56px 0 8px}
     <section id="next">
       <div class="wrap">
         <div class="next rv">
-          <h2 class="h">TELL US WHAT YOU THINK</h2>
+          <h2 class="h">WHAT'S NEXT?</h2>
+          <p class="lead" style="margin-top:18px">We're planning more nights celebrating culture in Stara Zagora. <b>Follow us on Instagram</b> to be the first to hear about the next event.</p>
+          <a class="igbtn igbtn--big" href="https://www.instagram.com/culturalsocietysz/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            @culturalsocietysz on Instagram
+          </a>
+          <h2 class="h" style="margin-top:56px">TELL US WHAT YOU THINK</h2>
           <p class="lead" style="margin-top:18px">Your ideas help us make the next one even better. Tap below and send us a quick message on WhatsApp.</p>
           <div class="fb">
             <a class="fb__c" href="https://wa.me/359882093176?text=Hi%21%20I%20came%20to%20the%20Cultural%20Event%20%F0%9F%8F%AE%0AHere%27s%20my%20feedback%3A%20" target="_blank" rel="noopener">
@@ -338,8 +361,9 @@ section{padding:56px 0 8px}
   </main>
 
   <footer class="foot">
-    <p class="foot__a">ASIAN SOCIETY · TRAKIA UNIVERSITY</p>
-    <p class="foot__b">CULTURAL EVENT · 17 OCTOBER 2026 · STARA ZAGORA</p>
+    <p class="foot__a">CULTURAL SOCIETY SZ · STARA ZAGORA</p>
+    <p class="foot__b"><a href="https://www.instagram.com/culturalsocietysz/" target="_blank" rel="noopener">@culturalsocietysz on Instagram</a></p>
+    <p class="foot__b">OUR FIRST EVENT · CULTURAL EVENT · 17 OCTOBER 2026</p>
     <p class="foot__b"><a href="https://maps.app.goo.gl/PGVZ2q4MvKAYjRC27" target="_blank" rel="noopener">International Youth Center, bul. “Tsar Simeon Veliki” 55</a></p>
   </footer>
 </div>
@@ -400,7 +424,7 @@ markTab();
 /* [file name inside the Images folder, width, height]. Order is chosen so the grid mixes portrait and landscape nicely.
    To add a photo later: put it in the Images folder and add a line here. */
 var PHOTOS=[
-  ['team-photo.jpg',2048,1152],['eventphotos (1).jpeg',1536,2048],['eventphotos (4).jpeg',2048,1536],['eventphotos (3).jpeg',1536,2048],['eventphoto (1).jpg',1600,900],
+  ['eventphotos (1).jpeg',1536,2048],['eventphotos (4).jpeg',2048,1536],['eventphotos (3).jpeg',1536,2048],['eventphoto (1).jpg',1600,900],
   ['eventphotos (2).jpeg',1536,2048],['eventphotos (7).jpeg',1280,960],['eventphotos (6).jpeg',960,1280],['eventphoto (2).jpg',1600,900],
   ['eventphotos (5).jpeg',1536,2048],['eventphotos (9).jpeg',960,1280],['eventphotos (12).jpeg',1280,960],['eventphotos (8).jpeg',960,1280],
   ['eventphotos (20).jpeg',1152,2048],['eventphoto (3).jpg',1600,900],['eventphotos (11).jpeg',960,1280],['eventphotos (10).jpeg',1280,960],

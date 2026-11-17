@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-<script>if (location.hostname.endsWith('github.io')) location.replace('https://asiansociety.pages.dev' + location.pathname.replace(/^\/AsianSociety/, '') + location.search + location.hash);</script>
+<script>if (location.hostname.endsWith('github.io')) location.replace('https://culturalsocietysz.pages.dev' + location.pathname.replace(/^\/AsianSociety/, '') + location.search + location.hash);</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Asian Society — Ticket Desk</title>
+<title>Cultural Society SZ — Ticket Desk</title>
 <style>
 :root{
   --bg:#0f0d24;--bg2:#1b1233;--surface:#251d3d;--surface2:#2e2549;--line:#40335e;
@@ -36,7 +36,7 @@ input:focus,select:focus,button:focus-visible{outline:2px solid var(--gold);outl
 /* header */
 .top{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:24px}
 .brand{display:flex;align-items:center;gap:14px}
-.logo{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;font-size:26px;background:linear-gradient(135deg,#f2c36b,#c9822f);box-shadow:0 8px 24px rgba(232,180,95,.3)}
+.logo{width:52px;height:52px;border-radius:14px;display:block;object-fit:cover;background:#fcf6f3;box-shadow:0 8px 24px rgba(232,180,95,.3)}
 .brand h1{font-size:26px;line-height:1.1}
 .brand p{margin:2px 0 0;color:var(--muted);font-size:13px}
 .top-actions{display:flex;gap:8px;align-items:center}
@@ -48,7 +48,7 @@ input:focus,select:focus,button:focus-visible{outline:2px solid var(--gold);outl
 
 /* login */
 .login{max-width:440px;margin:9vh auto 0;text-align:center;padding:34px 28px;background:rgba(37,29,61,.85);border:1px solid rgba(232,180,95,.3);border-radius:22px;box-shadow:0 24px 60px rgba(0,0,0,.45)}
-.login .logo{margin:0 auto 14px;width:62px;height:62px;font-size:34px;border-radius:18px}
+.login .logo{margin:0 auto 14px;width:96px;height:96px;border-radius:20px}
 .login h1{font-size:28px}
 .login p.sub{color:var(--muted);margin:6px 0 22px}
 .login form{display:grid;gap:12px}
@@ -240,9 +240,9 @@ button.big:disabled{opacity:.35;cursor:not-allowed}
 
   <!-- LOGIN -->
   <section class="login" id="login">
-    <div class="logo">🏮</div>
+    <img class="logo" src="Images/LOGO.jpeg" alt="Cultural Society SZ logo" width="96" height="96">
     <h1>Ticket Desk</h1>
-    <p class="sub">Asian Society · organisers only</p>
+    <p class="sub">Cultural Society SZ · organisers only</p>
     <form id="loginForm">
       <div class="pw">
         <input id="password" type="password" autocomplete="current-password" placeholder="Organiser password" aria-label="Organiser password">
@@ -257,7 +257,7 @@ button.big:disabled{opacity:.35;cursor:not-allowed}
   <div id="app" hidden>
     <div class="top">
       <div class="brand">
-        <div class="logo">🏮</div>
+        <img class="logo" src="Images/LOGO.jpeg" alt="Cultural Society SZ logo" width="52" height="52">
         <div><h1>Ticket Desk</h1><p id="summary">Loading…</p></div>
       </div>
       <div class="top-actions">
@@ -585,10 +585,10 @@ async function copyText(text) {
 
 // "Your ticket is ready" message: sends them to the Already-got-a-ticket box on the site.
 function readyMessage(t) {
-  return 'Hi ' + t.name + ',\n\nGood news: your payment is confirmed and your ticket is ready! 🎟️\n\nView your ticket here:\n' + ticketPage() + '\n(Type in the email you registered with: ' + t.email + ')\n\nCome dressed in your cultural clothes. We can\'t wait to see you!\n\nAsian Society';
+  return 'Hi ' + t.name + ',\n\nGood news: your payment is confirmed and your ticket is ready! 🎟️\n\nView your ticket here:\n' + ticketPage() + '\n(Type in the email you registered with: ' + t.email + ')\n\nCome dressed in your cultural clothes. We can\'t wait to see you!\n\nCultural Society SZ';
 }
 function customMessage(t, note) {
-  return 'Hi ' + t.name + ',\n\n' + note + '\n\nYou can also see this on your ticket page:\n' + ticketPage() + '\n(Type in the email you registered with: ' + t.email + ')\n\nAsian Society';
+  return 'Hi ' + t.name + ',\n\n' + note + '\n\nYou can also see this on your ticket page:\n' + ticketPage() + '\n(Type in the email you registered with: ' + t.email + ')\n\nCultural Society SZ';
 }
 
 /* message dialog */
@@ -651,7 +651,7 @@ $('#csvBtn').onclick = () => {
   const csv = [head.join(',')].concat(tickets.map(t => [t.code, t.name, t.email, t.phone, t.year, t.background, t.vegan, TIER_LABEL[tierOf(t)], t.pay_method === 'cash' ? 'cash' : 'revolut', t.status, t.used_at ? 'yes' : '', t.created_at].map(cell).join(','))).join('\n');
   const a = document.createElement('a');
   a.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv' }));
-  a.download = 'asian-society-attendees.csv'; a.click();
+  a.download = 'cultural-society-attendees.csv'; a.click();
 };
 
 /* pre-registration list (first-release €7 emails) */
